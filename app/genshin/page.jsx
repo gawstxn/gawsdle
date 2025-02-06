@@ -111,15 +111,15 @@ export default function Home() {
               <Image width={50} height={50} src={data.image}  alt="" className="w-9 lg:w-12 h-9 lg:h-12 object-cover"/>
               <div className="absolute w-full h-full opacity-70 z-[-1]" style={{backgroundColor: data.image == randomCharacter.image ? '#22c55e' : '#ef4444'}}></div>
             </div>
-            <div className="w-full h-full flex items-center justify-center relative px-2 truncate">
+            <div className="w-full h-full flex items-center justify-center relative px-2 md:whitespace-normal overflow-hidden">
               {data.name}
               <div className="absolute w-full h-full opacity-70 z-[-1]" style={{backgroundColor: data.name == randomCharacter.name ? '#22c55e' : '#ef4444'}}></div>
             </div>
-            <div className="w-full h-full flex items-center justify-center relative px-2 truncate">
+            <div className="w-full h-full flex items-center justify-center relative px-2 md:whitespace-normal overflow-hidden">
                 {data.gender}
               <div className="absolute w-full h-full opacity-70 z-[-1]" style={{backgroundColor: data.gender == randomCharacter.gender ? '#22c55e' : '#ef4444'}}></div>
             </div>
-            <div className="w-full h-full flex items-center justify-center relative px-2 truncate">
+            <div className="w-full h-full flex items-center justify-center relative px-2 md:whitespace-normal overflow-hidden">
                 {data.nation}
               <div className="absolute w-full h-full opacity-70 z-[-1]" style={{backgroundColor: data.nation == randomCharacter.nation ? '#22c55e' : '#ef4444'}}></div>
             </div>
