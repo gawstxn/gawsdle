@@ -261,15 +261,6 @@ const initialCharacters = [
         image: 'https://genshin.jmp.blue/characters/nilou/icon-big'
     },
     {
-        name: 'Traveler (Electro)',
-        vision: '/img/Electro.webp',
-        weapon: '/img/Sword.webp',
-        gender: 'Unknown',
-        nation: 'Outlander',
-        rarity: 5,
-        image: 'https://genshin.jmp.blue/characters/traveler-electro/icon-big'
-    },
-    {
         name: 'Yelan',
         vision: '/img/Hydro.webp',
         weapon: '/img/Bow.webp',
@@ -304,15 +295,6 @@ const initialCharacters = [
         nation: 'Sumeru',
         rarity: 4,
         image: 'https://genshin.jmp.blue/characters/sethos/icon-big'
-    },
-    {
-        name: 'Traveler (Anemo)',
-        vision: '/img/Anemo.webp',
-        weapon: '/img/Sword.webp',
-        gender: 'Unknown',
-        nation: 'Outlander',
-        rarity: 5,
-        image: 'https://genshin.jmp.blue/characters/traveler-anemo/icon-big'
     },
     {
         name: 'Xianyun',
@@ -603,15 +585,6 @@ const initialCharacters = [
         image: 'https://genshin.jmp.blue/characters/lynette/icon-big'
     },
     {
-        name: 'Traveler (Hydro)',
-        vision: '/img/Hydro.webp',
-        weapon: '/img/Sword.webp',
-        gender: 'Unknown',
-        nation: 'Outlander',
-        rarity: 5,
-        image: 'https://genshin.jmp.blue/characters/traveler-hydro/icon-big'
-    },
-    {
         name: 'Wriothesley',
         vision: '/img/Cryo.webp',
         weapon: '/img/Catalyst.webp',
@@ -655,15 +628,6 @@ const initialCharacters = [
         nation: 'Liyue',
         rarity: 5,
         image: 'https://genshin.jmp.blue/characters/baizhu/icon-big'
-    },
-    {
-        name: 'Traveler (Dendro)',
-        vision: '/img/Dendro.webp',
-        weapon: '/img/Sword.webp',
-        gender: 'Unknown',
-        nation: 'Outlander',
-        rarity: 5,
-        image: 'https://genshin.jmp.blue/characters/traveler-dendro/icon-big'
     },
     {
         name: 'Rosaria',
@@ -817,16 +781,7 @@ const initialCharacters = [
         nation: 'Inazuma',
         rarity: 4,
         image: 'https://genshin.jmp.blue/characters/kuki-shinobu/icon-big'
-    },
-    {
-        name: 'Traveler (Geo)',
-        vision: '/img/Geo.webp',
-        weapon: '/img/Sword.webp',
-        gender: 'Unknown',
-        nation: 'Outlander',
-        rarity: 5,
-        image: 'https://genshin.jmp.blue/characters/traveler-geo/icon-big'
-    },
+    }
 ];
 
 export default initialCharacters;
