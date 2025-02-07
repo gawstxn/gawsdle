@@ -41,7 +41,7 @@ export default function Home() {
       setCheat(true);
       setTimeout(() => {
         setCheat(false);
-      }, 3000);
+      }, 3000); 
       cheatSound.play();
     }
     // reset guess
