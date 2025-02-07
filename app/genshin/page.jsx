@@ -6,12 +6,14 @@ import Image from "next/image.js";
 import Link from "next/link.js";
 
 export default function Home() {
+  const cheatSound = new Audio("/cheatActivated.mp3");
   const [search, setSearch] = useState([]);
   const [characters, setCharacters] = useState([]);
   const [randomCharacter, setRandomCharacter] = useState(null);
   const [isWon, setIsWon] = useState(false);
   const [isGiveUp, setIsGiveUp] = useState(false);
   const [guess, setGuess] = useState(0);
+  const [cheat, setCheat] = useState(false);
 
   const getRandomCharacter = () => {
     const randomIndex = Math.floor(Math.random() * initialCharacters.length);
@@ -27,14 +29,32 @@ export default function Home() {
         }
       });
     }
-
-    if (input.toLowerCase() == "/givemeanswer") {
+    // cheat code
+    // give answer
+    if (input.toLowerCase() == "hesoyam") {
+      document.getElementById('search').value = '';
       initialCharacters.filter((c) => {
         if (c.name == randomCharacter.name) {
           data.push(c);
         }
       });
+      setCheat(true);
+      setTimeout(() => {
+        setCheat(false);
+      }, 3000);
+      cheatSound.play();
     }
+    // reset guess
+    if (input.toLowerCase() == "asnaeb") {
+      document.getElementById('search').value = '';
+      setCheat(true);
+      setTimeout(() => {
+        setCheat(false);
+      }, 3000);
+      setGuess(0);
+      cheatSound.play();
+    }
+
     setSearch(data);
   };
 
@@ -91,6 +111,7 @@ export default function Home() {
     <div className="relative flex flex-col items-center mx-auto px-2">
       <div className="w-full flex justify-between p-4">
         <Link href="/"> &larr; Back</Link>
+        {cheat ? <div className="absolute mt-7 lg:mt-10 bg-black border text-xs lg:text-base px-8 py-2 z-20 cheatActivated">Cheat activated</div> : null}
         <div>
           <p>Guess: {guess}</p>
           <button onClick={(e) => setIsGiveUp(true)} className="mt-2 border border-[#eee] px-2 hover:bg-[#eee] hover:text-black duration-150">Give up</button>
