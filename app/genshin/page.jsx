@@ -6,7 +6,6 @@ import Image from "next/image.js";
 import Link from "next/link.js";
 
 export default function Home() {
-  const cheatSound = new Audio("/cheatActivated.mp3");
   const [search, setSearch] = useState([]);
   const [characters, setCharacters] = useState([]);
   const [randomCharacter, setRandomCharacter] = useState(null);
@@ -14,6 +13,7 @@ export default function Home() {
   const [isGiveUp, setIsGiveUp] = useState(false);
   const [guess, setGuess] = useState(0);
   const [cheat, setCheat] = useState(false);
+  const [audio, setAudio] = useState(null);
 
   const getRandomCharacter = () => {
     const randomIndex = Math.floor(Math.random() * initialCharacters.length);
@@ -42,7 +42,7 @@ export default function Home() {
       setTimeout(() => {
         setCheat(false);
       }, 3000); 
-      cheatSound.play();
+      playAudio();
     }
     // reset guess
     if (input.toLowerCase() == "asnaeb") {
@@ -52,7 +52,7 @@ export default function Home() {
         setCheat(false);
       }, 3000);
       setGuess(0);
-      cheatSound.play();
+      playAudio();
     }
 
     setSearch(data);
@@ -95,7 +95,15 @@ export default function Home() {
     setGuess(0);
   }
 
+  const playAudio = () => {
+    if (audio) audio.play();
+  };
+
   useEffect(() => {
+    if (typeof window !== "undefined") {
+      setAudio(new Audio("/cheatActivated.mp3"));
+    }
+
     setCharacters([]);
     getRandomCharacter();
     initialCharacters.map((e) => {
