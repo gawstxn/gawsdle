@@ -72,9 +72,17 @@ export default function Home() {
     setIsGiveUp(false);
     setGuess(0);
   }
-
+  
   useEffect(() => {
+    setCharacters([]);
     getRandomCharacter();
+    initialCharacters.map((e) => {
+      e.select = false;
+    });
+    setSearch([]);
+    setIsWon(false);
+    setIsGiveUp(false);
+    setGuess(0);
   }, []);
 
   return (
@@ -83,7 +91,7 @@ export default function Home() {
         <Link href="/"> &larr; Back</Link>
         <div>
           <p>Guess: {guess}</p>
-          <button onClick={(e) => setIsGiveUp(true)} className="mt-2 border border-[#eee] px-2 hover:bg-[#eee] hover:text-black duration-150">Give up</button>
+          <button onClick={() => setIsGiveUp(true)} className="mt-2 border border-[#eee] px-2 hover:bg-[#eee] hover:text-black duration-150">Give up</button>
         </div>
       </div>
       <h1 className="text-5xl lg:text-8xl font-extrabold text-center uppercase">Stardle</h1>

@@ -76,7 +76,15 @@ export default function Home() {
   }
 
   useEffect(() => {
+    setCharacters([]);
     getRandomCharacter();
+    initialCharacters.map((e) => {
+      e.select = false;
+    });
+    setSearch([]);
+    setIsWon(false);
+    setIsGiveUp(false);
+    setGuess(0);
   }, []);
 
   return (
