@@ -103,7 +103,7 @@ export default function Home() {
         <div className="absolute max-h-[300px] bg-[#eee] text-black w-full border-x-2 border-[#eee] z-10 overflow-y-scroll">
           {search.map((data, index) => (
             <div className="flex items-center gap-4 p-2 border-b border-[#ccc] hover:bg-[#dadada] duration-150 cursor-pointer" key={index} onClick={(e) => changeSelectStage(index, e)}
-              style={{ pointerEvents: data.select ? 'none' : 'auto', backgroundColor: data.select ? '#dadada' : '' }}
+              style={{ pointerEvents: data.select ? 'none' : 'auto', backgroundColor: data.select ? '#ffbdbd' : '' }}
             >
               <Image width={50} height={50} src={data.image}  alt="" className="w-10 h-10 object-cover"/>
               {data.name}
