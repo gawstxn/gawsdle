@@ -75,9 +75,6 @@ export default function Home() {
 
   useEffect(() => {
     getRandomCharacter();
-    window.onpopstate = () => {
-      window.location.reload();
-    };
   }, []);
 
   return (
