@@ -476,7 +476,7 @@ const initialCharacters = [
       "combatType": "https://api.yatta.top/hsr/assets/UI/attribute/IconAttributeIce.png",
       "path": "https://raw.githubusercontent.com/FortOfFans/HSR/main/spriteoutput/avatarprofessiontattoo/profession/BgPathsnMage.png",
       "star": 5,
-      "img": "https://www.prydwen.gg/static/6dfd54dc3b1dc2330ad7f12da91c2c7a/60b4d/herta_icon.webp",
+      "img": "https://hsr.keqingmains.com/wp-content/uploads/2025/01/the-herta-character_icon.webp",
       "select": false
     },
     {
@@ -484,7 +484,7 @@ const initialCharacters = [
       "combatType": "https://api.yatta.top/hsr/assets/UI/attribute/IconAttributeThunder.png",
       "path": "https://raw.githubusercontent.com/FortOfFans/HSR/main/spriteoutput/avatarprofessiontattoo/profession/BgPathsMemory.png",
       "star": 5,
-      "img": "https://www.prydwen.gg/static/c436390769416892360817acd30369d1/60b4d/aglaea_icon.webp",
+      "img": "https://hsr.keqingmains.com/wp-content/uploads/2025/02/Aglaea.webp",
       "select": false
     }
   ];
