@@ -21,7 +21,7 @@ export const metadata = {
     siteName: "gawsdle",
     images: [
       {
-        url: "/img/gawston.jpg",
+        url: "/img/gawsdle.jpg",
         width: 1200,
         height: 630,
         alt: "gawsdle",
