@@ -781,7 +781,61 @@ const initialCharacters = [
         nation: 'Inazuma',
         rarity: 4,
         image: 'https://genshin.jmp.blue/characters/kuki-shinobu/icon-big'
-    }
+    },
+    {
+        name: 'Xilonen',
+        vision: '/img/Geo.webp',
+        weapon: '/img/Sword.webp',
+        gender: 'Female',
+        nation: 'Natlan',
+        rarity: 5,
+        image: 'https://keqingmains.com/wp-content/uploads/2024/02/xilonen_103_icon.webp'
+    },
+    {
+        name: 'Chasca',
+        vision: '/img/Anemo.webp',
+        weapon: '/img/Bow.webp',
+        gender: 'Female',
+        nation: 'Natlan',
+        rarity: 5,
+        image: 'https://keqingmains.com/wp-content/uploads/2024/11/Chasca_Icon.webp'
+    },
+    {
+        name: 'Mavuika',
+        vision: '/img/Pyro.webp',
+        weapon: '/img/Claymore.webp',
+        gender: 'Female',
+        nation: 'Natlan',
+        rarity: 5,
+        image: 'https://keqingmains.com/wp-content/uploads/2025/01/Mavuika_Icon.webp'
+    },
+    {
+        name: 'Citlali',
+        vision: '/img/Cryo.webp',
+        weapon: '/img/Catalyst.webp',
+        gender: 'Female',
+        nation: 'Natlan',
+        rarity: 5,
+        image: 'https://keqingmains.com/wp-content/uploads/2025/01/Citlali_Icon.webp'
+    },
+    {
+        name: 'Ororon',
+        vision: '/img/Electro.webp',
+        weapon: '/img/Bow.webp',
+        gender: 'Male',
+        nation: 'Natlan',
+        rarity: 5,
+        image: 'https://keqingmains.com/wp-content/uploads/2024/11/Ororon_Icon.webp'
+    },
+    {
+        name: 'Lan Yan',
+        vision: '/img/Anemo.webp',
+        weapon: '/img/Catalyst.webp',
+        gender: 'Female',
+        nation: 'Liyue',
+        rarity: 4,
+        image: 'https://keqingmains.com/wp-content/uploads/2025/01/UI_AvatarIcon_Lanyan.webp'
+    },
 ];
 
 export default initialCharacters;
