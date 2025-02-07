@@ -77,7 +77,7 @@ export default function Home() {
       <p className="fixed top-0 right-0 m-6 mt-4">Guess: {guess}</p>
       <Link href="/" className="fixed top-0 left-0 m-6 mt-4"> &larr; Back</Link>
       <h1 className="text-3xl lg:text-8xl font-extrabold text-center uppercase mt-10">Genshindle</h1>
-      <p>Genshin Impact Update 5.0</p>
+      <p>Genshin Impact Update 5.3</p>
       <div className="relative w-[340px]">
         <input type="text" list="characters" name="search" id="search" className="w-full h-10 mt-10 bg-transparent border border-[#555] focus:border-[#eee] focus:border-2 focus:outline-none rounded-[12px_0_0_0] pl-2" placeholder="Search Character. . . ." onChange={e => searchCharacter(e.target.value)}/>
         <div className="absolute max-h-[300px] bg-[#eee] text-black w-full border-x-2 border-[#eee] z-10 overflow-y-scroll">
