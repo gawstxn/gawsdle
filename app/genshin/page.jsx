@@ -10,6 +10,7 @@ export default function Home() {
   const [characters, setCharacters] = useState([]);
   const [randomCharacter, setRandomCharacter] = useState(null);
   const [isWon, setIsWon] = useState(false);
+  const [isGiveUp, setIsGiveUp] = useState(false);
   const [guess, setGuess] = useState(0);
 
   const getRandomCharacter = () => {
@@ -22,6 +23,14 @@ export default function Home() {
     if (input != "") {
       initialCharacters.filter((c) => {
         if (c.name.toLowerCase().includes(input.toLowerCase())) {
+          data.push(c);
+        }
+      });
+    }
+
+    if (input.toLowerCase() == "/givemeanswer") {
+      initialCharacters.filter((c) => {
+        if (c.name == randomCharacter.name) {
           data.push(c);
         }
       });
@@ -62,6 +71,7 @@ export default function Home() {
     });
     setSearch([]);
     setIsWon(false);
+    setIsGiveUp(false);
     setGuess(0);
   }
 
@@ -73,13 +83,18 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="flex flex-col items-center mx-auto px-2">
-      <p className="fixed top-0 right-0 m-6 mt-4">Guess: {guess}</p>
-      <Link href="/" className="fixed top-0 left-0 m-6 mt-4"> &larr; Back</Link>
-      <h1 className="text-3xl lg:text-8xl font-extrabold text-center uppercase mt-10">Genshindle</h1>
+    <div className="relative flex flex-col items-center mx-auto px-2">
+      <div className="w-full flex justify-between p-4">
+        <Link href="/"> &larr; Back</Link>
+        <div>
+          <p>Guess: {guess}</p>
+          <button onClick={(e) => setIsGiveUp(true)} className="mt-2 border border-[#eee] px-2 hover:bg-[#eee] hover:text-black duration-150">Give up</button>
+        </div>
+      </div>
+      <h1 className="text-3xl lg:text-8xl font-extrabold text-center uppercase">Genshindle</h1>
       <p>Genshin Impact Update 5.3</p>
       <div className="relative w-[340px]">
-        <input type="text" list="characters" name="search" id="search" className="w-full h-10 mt-10 bg-transparent border border-[#555] focus:border-[#eee] focus:border-2 focus:outline-none rounded-[12px_0_0_0] pl-2" placeholder="Search Character. . . ." onChange={e => searchCharacter(e.target.value)}/>
+        <input type="text" list="characters" name="search" id="search" className="w-full h-10 mt-10 bg-transparent border border-[#555] focus:border-[#eee] focus:border-2 focus:outline-none rounded-[12px_0_0_0] pl-2" placeholder="Type character name . . . ." onChange={e => searchCharacter(e.target.value)}/>
         <div className="absolute max-h-[300px] bg-[#eee] text-black w-full border-x-2 border-[#eee] z-10 overflow-y-scroll">
           {search.map((data, index) => (
             <div className="flex items-center gap-4 p-2 border-b border-[#ccc] hover:bg-[#dadada] duration-150 cursor-pointer" key={index} onClick={(e) => changeSelectStage(index, e)}
@@ -93,34 +108,34 @@ export default function Home() {
       </div>
 
       {/* head */}
-      <div className="w-[350px] lg:w-[950px] grid grid-cols-7 text-center mt-8 bg-[#eee] border-x-2 text-black rounded-[12px_0_0_0] h-10 gap-[1px]">
-        <div className="px-2 text-sm lg:text-lg truncate my-auto">Picture</div>
-        <div className="px-2 text-sm lg:text-lg truncate my-auto">Name</div>
-        <div className="px-2 text-sm lg:text-lg truncate my-auto">Gender</div>
-        <div className="px-2 text-sm lg:text-lg truncate my-auto">Nation</div>
-        <div className="px-2 text-sm lg:text-lg truncate my-auto">Vision</div>
-        <div className="px-2 text-sm lg:text-lg truncate my-auto">Weapon</div>
-        <div className="px-2 text-sm lg:text-lg truncate my-auto">Rarity</div>
+      <div className="w-[350px] lg:w-[950px] grid grid-cols-6 text-center mt-8 bg-[#eee] border-x-2 text-black rounded-[12px_0_0_0] h-10 gap-[1px]">
+        <div className="px-2 text-[9px] lg:text-lg truncate my-auto">Character</div>
+        {/* <div className="px-2 text-[9px] lg:text-lg truncate my-auto">Name</div> */}
+        <div className="px-2 text-[9px] lg:text-lg truncate my-auto">Gender</div>
+        <div className="px-2 text-[9px] lg:text-lg truncate my-auto">Nation</div>
+        <div className="px-2 text-[9px] lg:text-lg truncate my-auto">Vision</div>
+        <div className="px-2 text-[9px] lg:text-lg truncate my-auto">Weapon</div>
+        <div className="px-2 text-[9px] lg:text-lg truncate my-auto">Rarity</div>
       </div>
 
       {/* display character */}
       {characters.map((data, index) => (
         (data.select) ? (
-          <div className="w-[350px] lg:w-[950px] grid grid-cols-7 text-center h-20 border-x-2 border-b-2 border-[#eee] gap-[1px] slide-in-bck-center scale-in-ver-top" key={index}>
+          <div className="w-[350px] lg:w-[950px] grid grid-cols-6 text-center h-20 border-x-2 border-b-2 border-[#eee] gap-[1px] slide-in-bck-center scale-in-ver-top" key={index}>
             <div className="w-full h-full flex items-center justify-center relative px-2 my-auto mx-auto">
               <Image width={50} height={50} src={data.image}  alt="" className="w-9 lg:w-12 h-9 lg:h-12 object-cover"/>
               <div className="absolute w-full h-full opacity-70 z-[-1]" style={{backgroundColor: data.image == randomCharacter.image ? '#22c55e' : '#ef4444'}}></div>
             </div>
-            <div className="w-full h-full flex items-center justify-center relative px-2 md:whitespace-normal overflow-hidden">
-              {data.name}
+            {/* <div className="relative w-full h-full flex justify-center items-center px-2 my-auto overflow-hidden">
+              <p className="text-[9px] truncate lg:text-base">{data.name}</p>
               <div className="absolute w-full h-full opacity-70 z-[-1]" style={{backgroundColor: data.name == randomCharacter.name ? '#22c55e' : '#ef4444'}}></div>
-            </div>
-            <div className="w-full h-full flex items-center justify-center relative px-2 md:whitespace-normal overflow-hidden">
-                {data.gender}
+            </div> */}
+            <div className="max-w-[160px] h-full flex items-center justify-center relative px-2 md:whitespace-normal overflow-hidden">
+            <p className="text-[9px] truncate lg:text-base">{data.gender}</p>
               <div className="absolute w-full h-full opacity-70 z-[-1]" style={{backgroundColor: data.gender == randomCharacter.gender ? '#22c55e' : '#ef4444'}}></div>
             </div>
             <div className="w-full h-full flex items-center justify-center relative px-2 md:whitespace-normal overflow-hidden">
-                {data.nation}
+            <Image width={50} height={50} src={data.nation}  alt="" className="brightness-125 w-8 lg:w-12 h-8 lg:h-12 object-cover"/>
               <div className="absolute w-full h-full opacity-70 z-[-1]" style={{backgroundColor: data.nation == randomCharacter.nation ? '#22c55e' : '#ef4444'}}></div>
             </div>
             <div className="w-full h-full flex items-center justify-center relative px-2 my-auto mx-auto">
@@ -149,12 +164,12 @@ export default function Home() {
       {/* footer */}
       <div className="w-full flex justify-center items-center mt-32"></div>
 
-      {/* popup */}
-      {(isWon) ? (
-        <div className="relative flex justify-center items-center">
-          <div className="fixed top-80 w-[350px] lg:w-[500px] border border-[#eee] bg-[#171717] rounded-[12px_0_0_0] overflow-hidden scale-in-center">
+      {/* win, giveup popup */}
+      {(isWon || isGiveUp) ? (
+        <div className="fixed w-full h-full top-0 bg-black bg-opacity-70 flex justify-center items-center z-10">
+          <div className="fixed w-[350px] lg:w-[500px] border border-[#eee] bg-[#171717] rounded-[12px_0_0_0] overflow-hidden scale-in-center">
             <div className="bg-[#eee] text-black w-full py-2">
-              <p className="my-auto text-center">YOU WON!</p>
+              <p className="my-auto text-center">{isWon ? "YOU WON!" : "NAH BRO WHY YOU CAN'T ANSWER"}</p>
             </div>
             <div className="flex flex-col justify-center items-center">
               <Image width={100} height={100} src={randomCharacter.image}  alt="" className="mt-8 w-20 h-20 object-cover"/>

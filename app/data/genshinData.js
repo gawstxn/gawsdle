@@ -4,7 +4,7 @@ const initialCharacters = [
         vision: '/img/Cryo.webp',
         weapon: '/img/Claymore.webp',
         gender: 'Male',
-        nation: 'Fontaine',
+        nation: '/img/Fontaine.webp',
         rarity: 4,
         image: 'https://genshin.jmp.blue/characters/freminet/icon-big'
     },
@@ -13,7 +13,7 @@ const initialCharacters = [
         vision: '/img/Geo.webp',
         weapon: '/img/Polearm.webp',
         gender: 'Female',
-        nation: 'Natlan',
+        nation: '/img/Natlan.webp',
         rarity: 4,
         image: 'https://genshin.jmp.blue/characters/kachina/icon-big'
     },
@@ -22,7 +22,7 @@ const initialCharacters = [
         vision: '/img/Cryo.webp',
         weapon: '/img/Claymore.webp',
         gender: 'Male',
-        nation: 'Liyue',
+        nation: '/img/Liyue.webp',
         rarity: 4,
         image: 'https://genshin.jmp.blue/characters/chongyun/icon-big'
     },
@@ -31,7 +31,7 @@ const initialCharacters = [
         vision: '/img/Geo.webp',
         weapon: '/img/Claymore.webp',
         gender: 'Female',
-        nation: 'Fontaine',
+        nation: '/img/Fontaine.webp',
         rarity: 5,
         image: 'https://genshin.jmp.blue/characters/navia/icon-big'
     },
@@ -40,7 +40,7 @@ const initialCharacters = [
         vision: '/img/Hydro.webp',
         weapon: '/img/Sword.webp',
         gender: 'Male',
-        nation: 'Inazuma',
+        nation: '/img/Inazuma.webp',
         rarity: 5,
         image: 'https://genshin.jmp.blue/characters/ayato/icon-big'
     },
@@ -49,7 +49,7 @@ const initialCharacters = [
         vision: '/img/Geo.webp',
         weapon: '/img/Sword.webp',
         gender: 'Male',
-        nation: 'Mondstadt',
+        nation: '/img/Mondstadt.webp',
         rarity: 5,
         image: 'https://genshin.jmp.blue/characters/albedo/icon-big'
     },
@@ -58,7 +58,7 @@ const initialCharacters = [
         vision: '/img/Dendro.webp',
         weapon: '/img/Claymore.webp',
         gender: 'Male',
-        nation: 'Natlan',
+        nation: '/img/Natlan.webp',
         rarity: 5,
         image: 'https://genshin.jmp.blue/characters/kinich/icon-big'
     },
@@ -67,7 +67,7 @@ const initialCharacters = [
         vision: '/img/Hydro.webp',
         weapon: '/img/Catalyst.webp',
         gender: 'Female',
-        nation: 'Mondstadt',
+        nation: '/img/Mondstadt.webp',
         rarity: 4,
         image: 'https://genshin.jmp.blue/characters/barbara/icon-big'
     },
@@ -76,7 +76,7 @@ const initialCharacters = [
         vision: '/img/Cryo.webp',
         weapon: '/img/Claymore.webp',
         gender: 'Female',
-        nation: 'Mondstadt',
+        nation: '/img/Mondstadt.webp',
         rarity: 5,
         image: 'https://genshin.jmp.blue/characters/eula/icon-big'
     },
@@ -85,7 +85,7 @@ const initialCharacters = [
         vision: '/img/Electro.webp',
         weapon: '/img/Claymore.webp',
         gender: 'Female',
-        nation: 'Sumeru',
+        nation: '/img/Sumeru.webp',
         rarity: 4,
         image: 'https://genshin.jmp.blue/characters/dori/icon-big'
     },
@@ -94,7 +94,7 @@ const initialCharacters = [
         vision: '/img/Pyro.webp',
         weapon: '/img/Bow.webp',
         gender: 'Female',
-        nation: 'Mondstadt',
+        nation: '/img/Mondstadt.webp',
         rarity: 4,
         image: 'https://genshin.jmp.blue/characters/amber/icon-big'
     },
@@ -103,7 +103,7 @@ const initialCharacters = [
         vision: '/img/Pyro.webp',
         weapon: '/img/Claymore.webp',
         gender: 'Male',
-        nation: 'Liyue',
+        nation: '/img/Liyue.webp',
         rarity: 4,
         image: 'https://genshin.jmp.blue/characters/gaming/icon-big'
     },
@@ -112,7 +112,7 @@ const initialCharacters = [
         vision: '/img/Dendro.webp',
         weapon: '/img/Polearm.webp',
         gender: 'Female',
-        nation: 'Fontaine',
+        nation: '/img/Fontaine.webp',
         rarity: 5,
         image: 'https://genshin.jmp.blue/characters/emilie/icon-big'
     },
@@ -121,7 +121,7 @@ const initialCharacters = [
         vision: '/img/Electro.webp',
         weapon: '/img/Claymore.webp',
         gender: 'Female',
-        nation: 'Liyue',
+        nation: '/img/Liyue.webp',
         rarity: 4,
         image: 'https://genshin.jmp.blue/characters/beidou/icon-big'
     },
@@ -130,7 +130,7 @@ const initialCharacters = [
         vision: '/img/Pyro.webp',
         weapon: '/img/Polearm.webp',
         gender: 'Male',
-        nation: 'Mondstadt',
+        nation: '/img/Mondstadt.webp',
         rarity: 4,
         image: 'https://genshin.jmp.blue/characters/thoma/icon-big'
     },
@@ -139,7 +139,7 @@ const initialCharacters = [
         vision: '/img/Pyro.webp',
         weapon: '/img/Sword.webp',
         gender: 'Male',
-        nation: 'Mondstadt',
+        nation: '/img/Mondstadt.webp',
         rarity: 4,
         image: 'https://genshin.jmp.blue/characters/bennett/icon-big'
     },
@@ -148,7 +148,7 @@ const initialCharacters = [
         vision: '/img/Anemo.webp',
         weapon: '/img/Sword.webp',
         gender: 'Female',
-        nation: 'Mondstadt',
+        nation: '/img/Mondstadt.webp',
         rarity: 5,
         image: 'https://genshin.jmp.blue/characters/jean/icon-big'
     },
@@ -157,7 +157,7 @@ const initialCharacters = [
         vision: '/img/Electro.webp',
         weapon: '/img/Polearm.webp',
         gender: 'Female',
-        nation: 'Inazuma',
+        nation: '/img/Inazuma.webp',
         rarity: 5,
         image: 'https://genshin.jmp.blue/characters/raiden/icon-big'
     },
@@ -166,7 +166,7 @@ const initialCharacters = [
         vision: '/img/Electro.webp',
         weapon: '/img/Sword.webp',
         gender: 'Female',
-        nation: 'Liyue',
+        nation: '/img/Liyue.webp',
         rarity: 5,
         image: 'https://genshin.jmp.blue/characters/keqing/icon-big'
     },
@@ -175,7 +175,7 @@ const initialCharacters = [
         vision: '/img/Geo.webp',
         weapon: '/img/Bow.webp',
         gender: 'Male',
-        nation: 'Inazuma',
+        nation: '/img/Inazuma.webp',
         rarity: 4,
         image: 'https://genshin.jmp.blue/characters/gorou/icon-big'
     },
@@ -184,7 +184,7 @@ const initialCharacters = [
         vision: '/img/Hydro.webp',
         weapon: '/img/Catalyst.webp',
         gender: 'Female',
-        nation: 'Natlan',
+        nation: '/img/Natlan.webp',
         rarity: 5,
         image: 'https://genshin.jmp.blue/characters/mualani/icon-big'
     },
@@ -193,7 +193,7 @@ const initialCharacters = [
         vision: '/img/Cryo.webp',
         weapon: '/img/Polearm.webp',
         gender: 'Male',
-        nation: 'Mondstadt',
+        nation: '/img/Mondstadt.webp',
         rarity: 4,
         image: 'https://genshin.jmp.blue/characters/mika/icon-big'
     },
@@ -202,7 +202,7 @@ const initialCharacters = [
         vision: '/img/Hydro.webp',
         weapon: '/img/Catalyst.webp',
         gender: 'Female',
-        nation: 'Inazuma',
+        nation: '/img/Inazuma.webp',
         rarity: 5,
         image: 'https://genshin.jmp.blue/characters/kokomi/icon-big'
     },
@@ -211,7 +211,7 @@ const initialCharacters = [
         vision: '/img/Anemo.webp',
         weapon: '/img/Bow.webp',
         gender: 'Female',
-        nation: 'Sumeru',
+        nation: '/img/Sumeru.webp',
         rarity: 4,
         image: 'https://genshin.jmp.blue/characters/faruzan/icon-big'
     },
@@ -220,7 +220,7 @@ const initialCharacters = [
         vision: '/img/Cryo.webp',
         weapon: '/img/Bow.webp',
         gender: 'Female',
-        nation: 'Liyue',
+        nation: '/img/Liyue.webp',
         rarity: 5,
         image: 'https://genshin.jmp.blue/characters/ganyu/icon-big'
     },
@@ -229,7 +229,7 @@ const initialCharacters = [
         vision: '/img/Anemo.webp',
         weapon: '/img/Catalyst.webp',
         gender: 'Female',
-        nation: 'Mondstadt',
+        nation: '/img/Mondstadt.webp',
         rarity: 4,
         image: 'https://genshin.jmp.blue/characters/sucrose/icon-big'
     },
@@ -238,7 +238,7 @@ const initialCharacters = [
         vision: '/img/Hydro.webp',
         weapon: '/img/Bow.webp',
         gender: 'Female',
-        nation: 'Fontaine',
+        nation: '/img/Fontaine.webp',
         rarity: 5,
         image: 'https://genshin.jmp.blue/characters/sigewinne/icon-big'
     },
@@ -247,7 +247,7 @@ const initialCharacters = [
         vision: '/img/Anemo.webp',
         weapon: '/img/Sword.webp',
         gender: 'Male',
-        nation: 'Inazuma',
+        nation: '/img/Inazuma.webp',
         rarity: 5,
         image: 'https://genshin.jmp.blue/characters/kazuha/icon-big'
     },
@@ -256,7 +256,7 @@ const initialCharacters = [
         vision: '/img/Hydro.webp',
         weapon: '/img/Sword.webp',
         gender: 'Female',
-        nation: 'Sumeru',
+        nation: '/img/Sumeru.webp',
         rarity: 5,
         image: 'https://genshin.jmp.blue/characters/nilou/icon-big'
     },
@@ -265,7 +265,7 @@ const initialCharacters = [
         vision: '/img/Hydro.webp',
         weapon: '/img/Bow.webp',
         gender: 'Female',
-        nation: 'Liyue',
+        nation: '/img/Liyue.webp',
         rarity: 5,
         image: 'https://genshin.jmp.blue/characters/yelan/icon-big'
     },
@@ -274,7 +274,7 @@ const initialCharacters = [
         vision: '/img/Hydro.webp',
         weapon: '/img/Sword.webp',
         gender: 'Male',
-        nation: 'Liyue',
+        nation: '/img/Liyue.webp',
         rarity: 4,
         image: 'https://genshin.jmp.blue/characters/xingqiu/icon-big'
     },
@@ -283,7 +283,7 @@ const initialCharacters = [
         vision: '/img/Electro.webp',
         weapon: '/img/Claymore.webp',
         gender: 'Male',
-        nation: 'Mondstadt',
+        nation: '/img/Mondstadt.webp',
         rarity: 4,
         image: 'https://genshin.jmp.blue/characters/razor/icon-big'
     },
@@ -292,7 +292,7 @@ const initialCharacters = [
         vision: '/img/Electro.webp',
         weapon: '/img/Bow.webp',
         gender: 'Male',
-        nation: 'Sumeru',
+        nation: '/img/Sumeru.webp',
         rarity: 4,
         image: 'https://genshin.jmp.blue/characters/sethos/icon-big'
     },
@@ -301,7 +301,7 @@ const initialCharacters = [
         vision: '/img/Anemo.webp',
         weapon: '/img/Catalyst.webp',
         gender: 'Female',
-        nation: 'Liyue',
+        nation: '/img/Liyue.webp',
         rarity: 5,
         image: 'https://genshin.jmp.blue/characters/xianyun/icon-big'
     },
@@ -310,7 +310,7 @@ const initialCharacters = [
         vision: '/img/Pyro.webp',
         weapon: '/img/Catalyst.webp',
         gender: 'Female',
-        nation: 'Liyue',
+        nation: '/img/Liyue.webp',
         rarity: 4,
         image: 'https://genshin.jmp.blue/characters/yanfei/icon-big'
     },
@@ -319,7 +319,7 @@ const initialCharacters = [
         vision: '/img/Dendro.webp',
         weapon: '/img/Bow.webp',
         gender: 'Female',
-        nation: 'Sumeru',
+        nation: '/img/Sumeru.webp',
         rarity: 4,
         image: 'https://genshin.jmp.blue/characters/collei/icon-big'
     },
@@ -328,7 +328,7 @@ const initialCharacters = [
         vision: '/img/Hydro.webp',
         weapon: '/img/Polearm.webp',
         gender: 'Female',
-        nation: 'Sumeru',
+        nation: '/img/Sumeru.webp',
         rarity: 4,
         image: 'https://genshin.jmp.blue/characters/candace/icon-big'
     },
@@ -337,7 +337,7 @@ const initialCharacters = [
         vision: '/img/Dendro.webp',
         weapon: '/img/Polearm.webp',
         gender: 'Female',
-        nation: 'Liyue',
+        nation: '/img/Liyue.webp',
         rarity: 4,
         image: 'https://genshin.jmp.blue/characters/yaoyao/icon-big'
     },
@@ -346,7 +346,7 @@ const initialCharacters = [
         vision: '/img/Anemo.webp',
         weapon: '/img/Bow.webp',
         gender: 'Male',
-        nation: 'Mondstadt',
+        nation: '/img/Mondstadt.webp',
         rarity: 5,
         image: 'https://genshin.jmp.blue/characters/venti/icon-big'
     },
@@ -355,7 +355,7 @@ const initialCharacters = [
         vision: '/img/Electro.webp',
         weapon: '/img/Bow.webp',
         gender: 'Female',
-        nation: 'Mondstadt',
+        nation: '/img/Mondstadt.webp',
         rarity: 4,
         image: 'https://genshin.jmp.blue/characters/fischl/icon-big'
     },
@@ -364,7 +364,7 @@ const initialCharacters = [
         vision: '/img/Dendro.webp',
         weapon: '/img/Catalyst.webp',
         gender: 'Female',
-        nation: 'Sumeru',
+        nation: '/img/Sumeru.webp',
         rarity: 5,
         image: 'https://genshin.jmp.blue/characters/nahida/icon-big'
     },
@@ -373,7 +373,7 @@ const initialCharacters = [
         vision: '/img/Pyro.webp',
         weapon: '/img/Claymore.webp',
         gender: 'Male',
-        nation: 'Mondstadt',
+        nation: '/img/Mondstadt.webp',
         rarity: 5,
         image: 'https://genshin.jmp.blue/characters/diluc/icon-big'
     },
@@ -382,7 +382,7 @@ const initialCharacters = [
         vision: '/img/Electro.webp',
         weapon: '/img/Polearm.webp',
         gender: 'Male',
-        nation: 'Sumeru',
+        nation: '/img/Sumeru.webp',
         rarity: 5,
         image: 'https://genshin.jmp.blue/characters/cyno/icon-big'
     },
@@ -400,7 +400,7 @@ const initialCharacters = [
         vision: '/img/Cryo.webp',
         weapon: '/img/Sword.webp',
         gender: 'Female',
-        nation: 'Inazuma',
+        nation: '/img/Inazuma.webp',
         rarity: 5,
         image: 'https://genshin.jmp.blue/characters/ayaka/icon-big'
     },
@@ -409,7 +409,7 @@ const initialCharacters = [
         vision: '/img/Cryo.webp',
         weapon: '/img/Bow.webp',
         gender: 'Female',
-        nation: 'Mondstadt',
+        nation: '/img/Mondstadt.webp',
         rarity: 4,
         image: 'https://genshin.jmp.blue/characters/diona/icon-big'
     },
@@ -418,7 +418,7 @@ const initialCharacters = [
         vision: '/img/Cryo.webp',
         weapon: '/img/Catalyst.webp',
         gender: 'Female',
-        nation: 'Fontaine',
+        nation: '/img/Fontaine.webp',
         rarity: 4,
         image: 'https://genshin.jmp.blue/characters/charlotte/icon-big'
     },
@@ -427,7 +427,7 @@ const initialCharacters = [
         vision: '/img/Pyro.webp',
         weapon: '/img/Claymore.webp',
         gender: 'Female',
-        nation: 'Sumeru',
+        nation: '/img/Sumeru.webp',
         rarity: 5,
         image: 'https://genshin.jmp.blue/characters/dehya/icon-big'
     },
@@ -436,7 +436,7 @@ const initialCharacters = [
         vision: '/img/Anemo.webp',
         weapon: '/img/Claymore.webp',
         gender: 'Female',
-        nation: 'Inazuma',
+        nation: '/img/Inazuma.webp',
         rarity: 4,
         image: 'https://genshin.jmp.blue/characters/sayu/icon-big'
     },
@@ -445,7 +445,7 @@ const initialCharacters = [
         vision: '/img/Dendro.webp',
         weapon: '/img/Claymore.webp',
         gender: 'Male',
-        nation: 'Sumeru',
+        nation: '/img/Sumeru.webp',
         rarity: 4,
         image: 'https://genshin.jmp.blue/characters/kaveh/icon-big'
     },
@@ -454,7 +454,7 @@ const initialCharacters = [
         vision: '/img/Geo.webp',
         weapon: '/img/Claymore.webp',
         gender: 'Male',
-        nation: 'Inazuma',
+        nation: '/img/Inazuma.webp',
         rarity: 5,
         image: 'https://genshin.jmp.blue/characters/arataki-itto/icon-big'
     },
@@ -463,7 +463,7 @@ const initialCharacters = [
         vision: '/img/Electro.webp',
         weapon: '/img/Catalyst.webp',
         gender: 'Female',
-        nation: 'Mondstadt',
+        nation: '/img/Mondstadt.webp',
         rarity: 4,
         image: 'https://genshin.jmp.blue/characters/lisa/icon-big'
     },
@@ -472,7 +472,7 @@ const initialCharacters = [
         vision: '/img/Geo.webp',
         weapon: '/img/Sword.webp',
         gender: 'Female',
-        nation: 'Inazuma',
+        nation: '/img/Inazuma.webp',
         rarity: 5,
         image: 'https://genshin.jmp.blue/characters/chiori/icon-big'
     },
@@ -481,7 +481,7 @@ const initialCharacters = [
         vision: '/img/Cryo.webp',
         weapon: '/img/Polearm.webp',
         gender: 'Female',
-        nation: 'Liyue',
+        nation: '/img/Liyue.webp',
         rarity: 5,
         image: 'https://genshin.jmp.blue/characters/shenhe/icon-big'
     },
@@ -490,7 +490,7 @@ const initialCharacters = [
         vision: '/img/Pyro.webp',
         weapon: '/img/Bow.webp',
         gender: 'Female',
-        nation: 'Inazuma',
+        nation: '/img/Inazuma.webp',
         rarity: 5,
         image: 'https://genshin.jmp.blue/characters/yoimiya/icon-big'
     },
@@ -499,7 +499,7 @@ const initialCharacters = [
         vision: '/img/Hydro.webp',
         weapon: '/img/Catalyst.webp',
         gender: 'Male',
-        nation: 'Fontaine',
+        nation: '/img/Fontaine.webp',
         rarity: 5,
         image: 'https://genshin.jmp.blue/characters/neuvillette/icon-big'
     },
@@ -508,7 +508,7 @@ const initialCharacters = [
         vision: '/img/Electro.webp',
         weapon: '/img/Catalyst.webp',
         gender: 'Female',
-        nation: 'Inazuma',
+        nation: '/img/Inazuma.webp',
         rarity: 5,
         image: 'https://genshin.jmp.blue/characters/yae-miko/icon-big'
     },
@@ -517,7 +517,7 @@ const initialCharacters = [
         vision: '/img/Anemo.webp',
         weapon: '/img/Polearm.webp',
         gender: 'Male',
-        nation: 'Liyue',
+        nation: '/img/Liyue.webp',
         rarity: 5,
         image: 'https://genshin.jmp.blue/characters/xiao/icon-big'
     },
@@ -526,7 +526,7 @@ const initialCharacters = [
         vision: '/img/Anemo.webp',
         weapon: '/img/Catalyst.webp',
         gender: 'Male',
-        nation: 'Sumeru',
+        nation: '/img/Sumeru.webp',
         rarity: 5,
         image: 'https://genshin.jmp.blue/characters/wanderer/icon-big'
     },
@@ -535,7 +535,7 @@ const initialCharacters = [
         vision: '/img/Dendro.webp',
         weapon: '/img/Sword.webp',
         gender: 'Female',
-        nation: 'Inazuma',
+        nation: '/img/Inazuma.webp',
         rarity: 4,
         image: 'https://genshin.jmp.blue/characters/kirara/icon-big'
     },
@@ -544,7 +544,7 @@ const initialCharacters = [
         vision: '/img/Pyro.webp',
         weapon: '/img/Bow.webp',
         gender: 'Male',
-        nation: 'Fontaine',
+        nation: '/img/Fontaine.webp',
         rarity: 5,
         image: 'https://genshin.jmp.blue/characters/lyney/icon-big'
     },
@@ -553,7 +553,7 @@ const initialCharacters = [
         vision: '/img/Pyro.webp',
         weapon: '/img/Catalyst.webp',
         gender: 'Female',
-        nation: 'Mondstadt',
+        nation: '/img/Mondstadt.webp',
         rarity: 5,
         image: 'https://genshin.jmp.blue/characters/klee/icon-big'
     },
@@ -562,7 +562,7 @@ const initialCharacters = [
         vision: '/img/Hydro.webp',
         weapon: '/img/Bow.webp',
         gender: 'Male',
-        nation: 'Snezhnaya',
+        nation: '/img/Snezhnaya.webp',
         rarity: 5,
         image: 'https://genshin.jmp.blue/characters/tartaglia/icon-big'
     },
@@ -571,7 +571,7 @@ const initialCharacters = [
         vision: '/img/Pyro.webp',
         weapon: '/img/Claymore.webp',
         gender: 'Female',
-        nation: 'Liyue',
+        nation: '/img/Liyue.webp',
         rarity: 4,
         image: 'https://genshin.jmp.blue/characters/xinyan/icon-big'
     },
@@ -580,7 +580,7 @@ const initialCharacters = [
         vision: '/img/Anemo.webp',
         weapon: '/img/Sword.webp',
         gender: 'Female',
-        nation: 'Fontaine',
+        nation: '/img/Fontaine.webp',
         rarity: 4,
         image: 'https://genshin.jmp.blue/characters/lynette/icon-big'
     },
@@ -589,7 +589,7 @@ const initialCharacters = [
         vision: '/img/Cryo.webp',
         weapon: '/img/Catalyst.webp',
         gender: 'Male',
-        nation: 'Fontaine',
+        nation: '/img/Fontaine.webp',
         rarity: 5,
         image: 'https://genshin.jmp.blue/characters/wriothesley/icon-big'
     },
@@ -598,7 +598,7 @@ const initialCharacters = [
         vision: '/img/Pyro.webp',
         weapon: '/img/Polearm.webp',
         gender: 'Female',
-        nation: 'Liyue',
+        nation: '/img/Liyue.webp',
         rarity: 5,
         image: 'https://genshin.jmp.blue/characters/hu-tao/icon-big'
     },
@@ -607,7 +607,7 @@ const initialCharacters = [
         vision: '/img/Geo.webp',
         weapon: '/img/Polearm.webp',
         gender: 'Male',
-        nation: 'Liyue',
+        nation: '/img/Liyue.webp',
         rarity: 5,
         image: 'https://genshin.jmp.blue/characters/zhongli/icon-big'
     },
@@ -616,7 +616,7 @@ const initialCharacters = [
         vision: '/img/Geo.webp',
         weapon: '/img/Polearm.webp',
         gender: 'Female',
-        nation: 'Liyue',
+        nation: '/img/Liyue.webp',
         rarity: 4,
         image: 'https://genshin.jmp.blue/characters/yun-jin/icon-big'
     },
@@ -625,7 +625,7 @@ const initialCharacters = [
         vision: '/img/Dendro.webp',
         weapon: '/img/Catalyst.webp',
         gender: 'Male',
-        nation: 'Liyue',
+        nation: '/img/Liyue.webp',
         rarity: 5,
         image: 'https://genshin.jmp.blue/characters/baizhu/icon-big'
     },
@@ -634,7 +634,7 @@ const initialCharacters = [
         vision: '/img/Cryo.webp',
         weapon: '/img/Polearm.webp',
         gender: 'Female',
-        nation: 'Mondstadt',
+        nation: '/img/Mondstadt.webp',
         rarity: 4,
         image: 'https://genshin.jmp.blue/characters/rosaria/icon-big'
     },
@@ -643,7 +643,7 @@ const initialCharacters = [
         vision: '/img/Pyro.webp',
         weapon: '/img/Polearm.webp',
         gender: 'Female',
-        nation: 'Snezhnaya',
+        nation: '/img/Snezhnaya.webp',
         rarity: 5,
         image: 'https://genshin.jmp.blue/characters/arlecchino/icon-big'
     },
@@ -652,7 +652,7 @@ const initialCharacters = [
         vision: '/img/Geo.webp',
         weapon: '/img/Catalyst.webp',
         gender: 'Female',
-        nation: 'Liyue',
+        nation: '/img/Liyue.webp',
         rarity: 4,
         image: 'https://genshin.jmp.blue/characters/ningguang/icon-big'
     },
@@ -661,7 +661,7 @@ const initialCharacters = [
         vision: '/img/Electro.webp',
         weapon: '/img/Bow.webp',
         gender: 'Female',
-        nation: 'Inazuma',
+        nation: '/img/Inazuma.webp',
         rarity: 4,
         image: 'https://genshin.jmp.blue/characters/sara/icon-big'
     },
@@ -670,7 +670,7 @@ const initialCharacters = [
         vision: '/img/Hydro.webp',
         weapon: '/img/Sword.webp',
         gender: 'Female',
-        nation: 'Fontaine',
+        nation: '/img/Fontaine.webp',
         rarity: 5,
         image: 'https://genshin.jmp.blue/characters/furina/icon-big'
     },
@@ -679,7 +679,7 @@ const initialCharacters = [
         vision: '/img/Cryo.webp',
         weapon: '/img/Sword.webp',
         gender: 'Female',
-        nation: 'Liyue',
+        nation: '/img/Liyue.webp',
         rarity: 5,
         image: 'https://genshin.jmp.blue/characters/qiqi/icon-big'
     },
@@ -688,7 +688,7 @@ const initialCharacters = [
         vision: '/img/Cryo.webp',
         weapon: '/img/Sword.webp',
         gender: 'Female',
-        nation: 'Sumeru',
+        nation: '/img/Sumeru.webp',
         rarity: 4,
         image: 'https://genshin.jmp.blue/characters/layla/icon-big'
     },
@@ -697,7 +697,7 @@ const initialCharacters = [
         vision: '/img/Cryo.webp',
         weapon: '/img/Sword.webp',
         gender: 'Male',
-        nation: 'Mondstadt',
+        nation: '/img/Mondstadt.webp',
         rarity: 4,
         image: 'https://genshin.jmp.blue/characters/kaeya/icon-big'
     },
@@ -706,7 +706,7 @@ const initialCharacters = [
         vision: '/img/Hydro.webp',
         weapon: '/img/Catalyst.webp',
         gender: 'Female',
-        nation: 'Mondstadt',
+        nation: '/img/Mondstadt.webp',
         rarity: 5,
         image: 'https://genshin.jmp.blue/characters/mona/icon-big'
     },
@@ -715,7 +715,7 @@ const initialCharacters = [
         vision: '/img/Geo.webp',
         weapon: '/img/Claymore.webp',
         gender: 'Female',
-        nation: 'Mondstadt',
+        nation: '/img/Mondstadt.webp',
         rarity: 4,
         image: 'https://genshin.jmp.blue/characters/noelle/icon-big'
     },
@@ -724,7 +724,7 @@ const initialCharacters = [
         vision: '/img/Dendro.webp',
         weapon: '/img/Sword.webp',
         gender: 'Male',
-        nation: 'Sumeru',
+        nation: '/img/Sumeru.webp',
         rarity: 5,
         image: 'https://genshin.jmp.blue/characters/alhaitham/icon-big'
     },
@@ -733,7 +733,7 @@ const initialCharacters = [
         vision: '/img/Pyro.webp',
         weapon: '/img/Polearm.webp',
         gender: 'Female',
-        nation: 'Fontaine',
+        nation: '/img/Fontaine.webp',
         rarity: 4,
         image: 'https://genshin.jmp.blue/characters/chevreuse/icon-big'
     },
@@ -742,7 +742,7 @@ const initialCharacters = [
         vision: '/img/Anemo.webp',
         weapon: '/img/Catalyst.webp',
         gender: 'Male',
-        nation: 'Inazuma',
+        nation: '/img/Inazuma.webp',
         rarity: 4,
         image: 'https://genshin.jmp.blue/characters/shikanoin-heizou/icon-big'
     },
@@ -751,7 +751,7 @@ const initialCharacters = [
         vision: '/img/Dendro.webp',
         weapon: '/img/Bow.webp',
         gender: 'Male',
-        nation: 'Sumeru',
+        nation: '/img/Sumeru.webp',
         rarity: 5,
         image: 'https://genshin.jmp.blue/characters/tighnari/icon-big'
     },
@@ -760,7 +760,7 @@ const initialCharacters = [
         vision: '/img/Electro.webp',
         weapon: '/img/Sword.webp',
         gender: 'Female',
-        nation: 'Fontaine',
+        nation: '/img/Fontaine.webp',
         rarity: 5,
         image: 'https://genshin.jmp.blue/characters/clorinde/icon-big'
     },
@@ -769,7 +769,7 @@ const initialCharacters = [
         vision: '/img/Pyro.webp',
         weapon: '/img/Polearm.webp',
         gender: 'Female',
-        nation: 'Liyue',
+        nation: '/img/Liyue.webp',
         rarity: 4,
         image: 'https://genshin.jmp.blue/characters/xiangling/icon-big'
     },
@@ -778,7 +778,7 @@ const initialCharacters = [
         vision: '/img/Electro.webp',
         weapon: '/img/Sword.webp',
         gender: 'Female',
-        nation: 'Inazuma',
+        nation: '/img/Inazuma.webp',
         rarity: 4,
         image: 'https://genshin.jmp.blue/characters/kuki-shinobu/icon-big'
     },
@@ -787,7 +787,7 @@ const initialCharacters = [
         vision: '/img/Geo.webp',
         weapon: '/img/Sword.webp',
         gender: 'Female',
-        nation: 'Natlan',
+        nation: '/img/Natlan.webp',
         rarity: 5,
         image: 'https://keqingmains.com/wp-content/uploads/2024/02/xilonen_103_icon.webp'
     },
@@ -796,7 +796,7 @@ const initialCharacters = [
         vision: '/img/Anemo.webp',
         weapon: '/img/Bow.webp',
         gender: 'Female',
-        nation: 'Natlan',
+        nation: '/img/Natlan.webp',
         rarity: 5,
         image: 'https://keqingmains.com/wp-content/uploads/2024/11/Chasca_Icon.webp'
     },
@@ -805,7 +805,7 @@ const initialCharacters = [
         vision: '/img/Pyro.webp',
         weapon: '/img/Claymore.webp',
         gender: 'Female',
-        nation: 'Natlan',
+        nation: '/img/Natlan.webp',
         rarity: 5,
         image: 'https://keqingmains.com/wp-content/uploads/2025/01/Mavuika_Icon.webp'
     },
@@ -814,7 +814,7 @@ const initialCharacters = [
         vision: '/img/Cryo.webp',
         weapon: '/img/Catalyst.webp',
         gender: 'Female',
-        nation: 'Natlan',
+        nation: '/img/Natlan.webp',
         rarity: 5,
         image: 'https://keqingmains.com/wp-content/uploads/2025/01/Citlali_Icon.webp'
     },
@@ -823,7 +823,7 @@ const initialCharacters = [
         vision: '/img/Electro.webp',
         weapon: '/img/Bow.webp',
         gender: 'Male',
-        nation: 'Natlan',
+        nation: '/img/Natlan.webp',
         rarity: 4,
         image: 'https://keqingmains.com/wp-content/uploads/2024/11/Ororon_Icon.webp'
     },
@@ -832,7 +832,7 @@ const initialCharacters = [
         vision: '/img/Anemo.webp',
         weapon: '/img/Catalyst.webp',
         gender: 'Female',
-        nation: 'Liyue',
+        nation: '/img/Liyue.webp',
         rarity: 4,
         image: 'https://keqingmains.com/wp-content/uploads/2025/01/UI_AvatarIcon_Lanyan.webp'
     },
