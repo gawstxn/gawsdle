@@ -72,7 +72,7 @@ export default function Home() {
     setIsGiveUp(false);
     setGuess(0);
   }
-  
+
   useEffect(() => {
     setCharacters([]);
     getRandomCharacter();
@@ -166,7 +166,7 @@ export default function Home() {
             </div>
             <div className="flex flex-col justify-center items-center">
               <Image width={100} height={100} src={randomCharacter.img}  alt="" className="mt-8 w-20 h-20 object-cover"/>
-              <p className="mt-2 uppercase">ANSWER IS {randomCharacter.name}</p>
+              <p className="mt-2 uppercase text-center">ANSWER IS {randomCharacter.name}</p>
               <p className="mt-2 uppercase">Guess: {guess}</p>
               <button onClick={playAgain} className="bg-[#eee] text-black mt-6 mb-4 p-2 rounded-[12px_0_0_0]">PLAY AGAIN</button>
             </div>
