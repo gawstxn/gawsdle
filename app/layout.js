@@ -14,6 +14,21 @@ const geistMono = Geist_Mono({
 export const metadata = {
   title: "gawsdle",
   description: "Made with ❤️ by gawston skibidi skrttt.",
+  openGraph: {
+    title: "gawsdle",
+    description: "Made with ❤️ by gawston skibidi skrttt.",
+    url: "https://gawsdle.vercel.app/",
+    siteName: "gawsdle",
+    images: [
+      {
+        url: "/img/gawston.jpg",
+        width: 1200,
+        height: 630,
+        alt: "gawsdle",
+      },
+    ],
+    type: "website",
+  }
 };
 
 export default function RootLayout({ children }) {
