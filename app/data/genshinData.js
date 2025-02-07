@@ -391,7 +391,7 @@ const initialCharacters = [
         vision: '/img/Cryo.webp',
         weapon: '/img/Bow.webp',
         gender: 'Female',
-        nation: 'Unknown',
+        nation: '/img/Another_world.webp',
         rarity: 5,
         image: 'https://genshin.jmp.blue/characters/aloy/icon-big'
     },
