@@ -824,7 +824,7 @@ const initialCharacters = [
         weapon: '/img/Bow.webp',
         gender: 'Male',
         nation: 'Natlan',
-        rarity: 5,
+        rarity: 4,
         image: 'https://keqingmains.com/wp-content/uploads/2024/11/Ororon_Icon.webp'
     },
     {
