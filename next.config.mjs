@@ -6,7 +6,8 @@ const nextConfig = {
             'raw.githubusercontent.com', 
             'api.yatta.top', 
             'genshin.jmp.blue', 
-            'keqingmains.com'
+            'keqingmains.com',
+            'prydwen.gg'
         ],
     },
 };
