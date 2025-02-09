@@ -14,8 +14,10 @@ export default function Home() {
   const [guess, setGuess] = useState(0);
   const [cheat, setCheat] = useState(false);
   const [audio, setAudio] = useState(null);
-  const domsearch = useRef(null);
+  const domSearch = useRef(null);
   const searchIndex = useRef(0); 
+  const refGiveUp = useRef(false);
+  const refWin = useRef(false);
 
   const getRandomCharacter = () => {
     const randomIndex = Math.floor(Math.random() * initialCharacters.length);
@@ -81,8 +83,11 @@ export default function Home() {
     if (data.nation == randomCharacter.nation) score++;
     if (data.gender == randomCharacter.gender) score++;
     if (data.rarity == randomCharacter.rarity) score++;
-
-    if (score == 7) setIsWon(true);
+    
+    if (score == 7) {
+      setIsWon((prev) => true);
+      refWin.current = true;
+    };
   }
 
   const playAgain = () => {
@@ -95,6 +100,8 @@ export default function Home() {
     setIsWon(false);
     setIsGiveUp(false);
     setGuess(0);
+    refGiveUp.current = false;
+    refWin.current = false;
   }
 
   const playAudio = () => {
@@ -115,44 +122,61 @@ export default function Home() {
     setIsWon(false);
     setIsGiveUp(false);
     setGuess(0);
-
-    document.addEventListener("keyup",(event) => {
-      if (event.key === "ArrowUp") {
-        if (search.length > 0) {
-          for (let e of domsearch.current.children) {
-            e.style = "#dadada";
-          }
-
-          if (searchIndex.current < 0) {
-            searchIndex.current = search.length - 1;
-          }
-
-          domsearch.current.children[searchIndex.current].style.backgroundColor = "red";
-          searchIndex.current--;
-        }
-      }
-      else if (event.key === "ArrowDown") {
-        if (search.length > 0) {
-          for (let e of domsearch.current.children) {
-            e.style = "#dadada";
-          }
-
-          if (searchIndex.current > search.length - 1) {
-            searchIndex.current = 0;
-          }
-
-          domsearch.current.children[searchIndex.current].style.backgroundColor = "red";
-          searchIndex.current++;
-        }
-      }
-    });
   }, []);
-  
-  const Enter = (event) => {
-    if (event.key == "Enter") {
-      console.log("fuck");
+
+  useEffect(() => {
+    const handleKeyUp = (event) => {
+      if (!domSearch.current) return;
+
+      const items = domSearch.current.children;
+      
+      if (search.length > 0) {
+        for (let e of items) {
+          e.style.backgroundColor = "#eee";
+        }
+      }
+
+      if (event.key === "ArrowUp" && search.length > 0) {
+        searchIndex.current = searchIndex.current <= 0 ? search.length - 1 : searchIndex.current - 1;
+      } else if (event.key === "ArrowDown" && search.length > 0) {
+        searchIndex.current = searchIndex.current >= search.length - 1 ? 0 : searchIndex.current + 1;
+      }
+
+      items[searchIndex.current].style.backgroundColor = "#dadada";
+    };
+
+    const handleEnter = (event) => {
+      if (event.key === "Enter") {
+        if (refWin.current || refGiveUp.current) {
+          playAgain();
+          return;
+        }
+      
+        if (search.length > 0) {
+          let data = [...search];
+          data[searchIndex.current].select = true;
+    
+          setCharacters((prev) => [...prev, data[searchIndex.current]]);
+          handleIsWon(data[searchIndex.current]);
+    
+          document.getElementById("search").value = "";
+          setSearch([]);
+          setGuess((prev) => prev + 1);
+          searchIndex.current = 0;
+        }
+      }
+    };
+
+    if (search.length > 0) {
+      document.addEventListener("keyup", handleKeyUp);
     }
-  }
+    document.addEventListener("keyup", handleEnter);
+
+    return () => {
+      document.removeEventListener("keyup", handleKeyUp);
+      document.removeEventListener("keyup", handleEnter);
+    };
+  },[search]);
 
   return (
     <div className="relative flex flex-col items-center mx-auto px-2">
@@ -161,14 +185,14 @@ export default function Home() {
         {cheat ? <div className="absolute mt-7 lg:mt-10 bg-black border text-xs lg:text-base px-8 py-2 z-20 cheatActivated">Cheat activated</div> : null}
         <div>
           <p>Guess: {guess}</p>
-          <button onClick={(e) => setIsGiveUp(true)} className="mt-2 border border-[#eee] px-2 hover:bg-[#eee] hover:text-black duration-150">Give up</button>
+          <button onClick={(e) => {setIsGiveUp(true); refGiveUp.current = true}} className="mt-2 border border-[#eee] px-2 hover:bg-[#eee] hover:text-black duration-150">Give up</button>
         </div>
       </div>
       <h1 className="text-3xl lg:text-8xl font-extrabold text-center uppercase">Genshindle</h1>
       <p>Genshin Impact Update 5.3</p>
       <div className="relative w-[340px]">
-        <input onKeyDown={(e) => Enter(e)} type="text" list="characters" name="search" id="search" className="w-full h-10 mt-10 bg-transparent border border-[#555] focus:border-[#eee] focus:border-2 focus:outline-none rounded-[12px_0_0_0] pl-2" placeholder="Type character name . . . ." onChange={e => searchCharacter(e.target.value)} autoComplete="off"/>
-        <div ref={domsearch} className="absolute max-h-[300px] bg-[#eee] text-black w-full border-x-2 border-[#eee] z-10 overflow-y-scroll">
+        <input type="text" list="characters" name="search" id="search" className="w-full h-10 mt-10 bg-transparent border border-[#555] focus:border-[#eee] focus:border-2 focus:outline-none rounded-[12px_0_0_0] pl-2" placeholder="Type character name . . . ." onChange={e => searchCharacter(e.target.value)} autoComplete="off"/>
+        <div ref={domSearch} className="absolute max-h-[300px] bg-[#eee] text-black w-full border-x-2 border-[#eee] z-10 overflow-y-scroll">
           {search.map((data, index) => (
             <div className="flex items-center gap-4 p-2 border-b border-[#ccc] hover:bg-[#dadada] duration-150 cursor-pointer" key={index} onClick={(e) => changeSelectStage(index, e)}>
               <Image width={50} height={50} src={data.image}  alt="" className="w-10 h-10 object-cover"/>
