@@ -145,6 +145,7 @@ export default function Home() {
       items[searchIndex.current].style.backgroundColor = "#dadada";
     };
 
+
     const handleEnter = (event) => {
       if (event.key === "Enter") {
         if (refWin.current || refGiveUp.current) {
@@ -155,8 +156,7 @@ export default function Home() {
         if (search.length > 0) {
           let data = [...search];
           data[searchIndex.current].select = true;
-    
-          setCharacters((prev) => [...prev, data[searchIndex.current]]);
+          setCharacters([...characters, data[searchIndex.current]]);
           handleIsWon(data[searchIndex.current]);
     
           document.getElementById("search").value = "";

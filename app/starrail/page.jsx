@@ -154,7 +154,7 @@ export default function Home() {
           let data = [...search];
           data[searchIndex.current].select = true;
     
-          setCharacters((prev) => [...prev, data[searchIndex.current]]);
+          setCharacters([...characters, data[searchIndex.current]]);
           handleIsWon(data[searchIndex.current]);
     
           document.getElementById("search").value = "";
