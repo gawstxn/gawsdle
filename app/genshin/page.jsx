@@ -115,6 +115,37 @@ export default function Home() {
     setIsWon(false);
     setIsGiveUp(false);
     setGuess(0);
+
+    document.addEventListener("keyup",(event) => {
+      if (event.key === "ArrowUp") {
+        if (search.length > 0) {
+          for (let e of domsearch.current.children) {
+            e.style = "#dadada";
+          }
+
+          if (searchIndex.current < 0) {
+            searchIndex.current = search.length - 1;
+          }
+
+          domsearch.current.children[searchIndex.current].style.backgroundColor = "red";
+          searchIndex.current--;
+        }
+      }
+      else if (event.key === "ArrowDown") {
+        if (search.length > 0) {
+          for (let e of domsearch.current.children) {
+            e.style = "#dadada";
+          }
+
+          if (searchIndex.current > search.length - 1) {
+            searchIndex.current = 0;
+          }
+
+          domsearch.current.children[searchIndex.current].style.backgroundColor = "red";
+          searchIndex.current++;
+        }
+      }
+    });
   }, []);
   
   const Enter = (event) => {
@@ -122,38 +153,6 @@ export default function Home() {
       console.log("fuck");
     }
   }
-  
-  console.log('test run dev');
-  document.addEventListener("keyup",(event) => {
-    if (event.key === "ArrowUp") {
-      if (search.length > 0) {
-        for (let e of domsearch.current.children) {
-          e.style = "#dadada";
-        }
-
-        if (searchIndex.current < 0) {
-          searchIndex.current = search.length - 1;
-        }
-
-        domsearch.current.children[searchIndex.current].style.backgroundColor = "red";
-        searchIndex.current--;
-      }
-    }
-    else if (event.key === "ArrowDown") {
-      if (search.length > 0) {
-        for (let e of domsearch.current.children) {
-          e.style = "#dadada";
-        }
-
-        if (searchIndex.current > search.length - 1) {
-          searchIndex.current = 0;
-        }
-
-        domsearch.current.children[searchIndex.current].style.backgroundColor = "red";
-        searchIndex.current++;
-      }
-    }
-  });
 
   return (
     <div className="relative flex flex-col items-center mx-auto px-2">
