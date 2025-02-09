@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import initialCharacters from "../data/genshinData.js";
 import Image from "next/image.js";
 import Link from "next/link.js";
@@ -14,6 +14,8 @@ export default function Home() {
   const [guess, setGuess] = useState(0);
   const [cheat, setCheat] = useState(false);
   const [audio, setAudio] = useState(null);
+  const domsearch = useRef(null);
+  const searchIndex = useRef(0); 
 
   const getRandomCharacter = () => {
     const randomIndex = Math.floor(Math.random() * initialCharacters.length);
@@ -24,7 +26,7 @@ export default function Home() {
     let data = [];
     if (input != "") {
       initialCharacters.filter((c) => {
-        if (c.name.toLowerCase().includes(input.toLowerCase())) {
+        if (c.name.toLowerCase().includes(input.toLowerCase()) && c.select == false) {
           data.push(c);
         }
       });
@@ -114,6 +116,44 @@ export default function Home() {
     setIsGiveUp(false);
     setGuess(0);
   }, []);
+  
+  const Enter = (event) => {
+    if (event.key == "Enter") {
+      console.log("fuck");
+    }
+  }
+  
+  console.log('test run dev');
+  document.addEventListener("keyup",(event) => {
+    if (event.key === "ArrowUp") {
+      if (search.length > 0) {
+        for (let e of domsearch.current.children) {
+          e.style = "#dadada";
+        }
+
+        if (searchIndex.current < 0) {
+          searchIndex.current = search.length - 1;
+        }
+
+        domsearch.current.children[searchIndex.current].style.backgroundColor = "red";
+        searchIndex.current--;
+      }
+    }
+    else if (event.key === "ArrowDown") {
+      if (search.length > 0) {
+        for (let e of domsearch.current.children) {
+          e.style = "#dadada";
+        }
+
+        if (searchIndex.current > search.length - 1) {
+          searchIndex.current = 0;
+        }
+
+        domsearch.current.children[searchIndex.current].style.backgroundColor = "red";
+        searchIndex.current++;
+      }
+    }
+  });
 
   return (
     <div className="relative flex flex-col items-center mx-auto px-2">
@@ -128,12 +168,10 @@ export default function Home() {
       <h1 className="text-3xl lg:text-8xl font-extrabold text-center uppercase">Genshindle</h1>
       <p>Genshin Impact Update 5.3</p>
       <div className="relative w-[340px]">
-        <input type="text" list="characters" name="search" id="search" className="w-full h-10 mt-10 bg-transparent border border-[#555] focus:border-[#eee] focus:border-2 focus:outline-none rounded-[12px_0_0_0] pl-2" placeholder="Type character name . . . ." onChange={e => searchCharacter(e.target.value)}/>
-        <div className="absolute max-h-[300px] bg-[#eee] text-black w-full border-x-2 border-[#eee] z-10 overflow-y-scroll">
+        <input onKeyDown={(e) => Enter(e)} type="text" list="characters" name="search" id="search" className="w-full h-10 mt-10 bg-transparent border border-[#555] focus:border-[#eee] focus:border-2 focus:outline-none rounded-[12px_0_0_0] pl-2" placeholder="Type character name . . . ." onChange={e => searchCharacter(e.target.value)} autoComplete="off"/>
+        <div ref={domsearch} className="absolute max-h-[300px] bg-[#eee] text-black w-full border-x-2 border-[#eee] z-10 overflow-y-scroll">
           {search.map((data, index) => (
-            <div className="flex items-center gap-4 p-2 border-b border-[#ccc] hover:bg-[#dadada] duration-150 cursor-pointer" key={index} onClick={(e) => changeSelectStage(index, e)}
-              style={{ pointerEvents: data.select ? 'none' : 'auto', backgroundColor: data.select ? '#ffbdbd' : '' }}
-            >
+            <div className="flex items-center gap-4 p-2 border-b border-[#ccc] hover:bg-[#dadada] duration-150 cursor-pointer" key={index} onClick={(e) => changeSelectStage(index, e)}>
               <Image width={50} height={50} src={data.image}  alt="" className="w-10 h-10 object-cover"/>
               {data.name}
             </div>
