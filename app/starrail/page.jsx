@@ -74,7 +74,7 @@ export default function Home() {
     let score = 0;
     if (data.name == randomCharacter.name) score++;
     if (data.img == randomCharacter.img) score++;
-    if (data.combatType == randomCharacter.combatType) score++;
+    if (data.element == randomCharacter.element) score++;
     if (data.path == randomCharacter.path) score++;
     if (data.rarity == randomCharacter.rarity) score++;
 
@@ -143,7 +143,7 @@ export default function Home() {
       <div className="w-[350px] lg:w-[800px] grid grid-cols-5 text-center mt-8 bg-[#eee] border-x-2 text-black rounded-[12px_0_0_0] h-10 gap-[1px]">
         <div className="px-2 text-[9px] lg:text-lg truncate my-auto">Character</div>
         <div className="px-2 text-[9px] lg:text-lg truncate my-auto">Gender</div>
-        <div className="px-2 text-[9px] lg:text-lg truncate my-auto">Combat Type</div>
+        <div className="px-2 text-[9px] lg:text-lg truncate my-auto">Element</div>
         <div className="px-2 text-[9px] lg:text-lg truncate my-auto">Path</div>
         <div className="px-2 text-[9px] lg:text-lg truncate my-auto">Rarity</div>
       </div>
@@ -161,8 +161,8 @@ export default function Home() {
               <div className="absolute w-full h-full opacity-70 z-[-1]" style={{backgroundColor: data.gender == randomCharacter.gender ? '#22c55e' : '#ef4444'}}></div>
             </div>
             <div className="w-full h-full flex items-center justify-center relative px-2 my-auto mx-auto">
-              <Image width={50} height={50} src={data.combatType}  alt="" className="w-12 h-12 object-cover"/>
-              <div className="absolute w-full h-full opacity-70 z-[-1]" style={{backgroundColor: data.combatType == randomCharacter.combatType ? '#22c55e' : '#ef4444'}}></div>
+              <Image width={50} height={50} src={data.element}  alt="" className="w-12 h-12 object-cover"/>
+              <div className="absolute w-full h-full opacity-70 z-[-1]" style={{backgroundColor: data.element == randomCharacter.element ? '#22c55e' : '#ef4444'}}></div>
             </div>
             <div className="w-full h-full flex items-center justify-center relative px-2 my-auto mx-auto">
               <Image width={50} height={50} src={data.path}  alt="" className="w-12 h-12 object-cover"/>

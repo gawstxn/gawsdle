@@ -1,7 +1,7 @@
 const initialCharacters = [
     {
       "name": "March 7th",
-      "combatType": "https://api.yatta.top/hsr/assets/UI/attribute/IconAttributeIce.png",
+      "element": "https://api.yatta.top/hsr/assets/UI/attribute/IconAttributeIce.png",
       "path": "https://raw.githubusercontent.com/FortOfFans/HSR/main/spriteoutput/avatarprofessiontattoo/profession/BgPathsKnight.png",
       "rarity": 4,
       "img": "https://raw.githubusercontent.com/FortOfFans/HSR/main/spriteoutput/avataricon/avatar/1001.png",
@@ -10,7 +10,7 @@ const initialCharacters = [
     },
     {
       "name": "Dan Heng",
-      "combatType": "https://api.yatta.top/hsr/assets/UI/attribute/IconAttributeWind.png",
+      "element": "https://api.yatta.top/hsr/assets/UI/attribute/IconAttributeWind.png",
       "path": "https://raw.githubusercontent.com/FortOfFans/HSR/main/spriteoutput/avatarprofessiontattoo/profession/BgPathsRogue.png",
       "rarity": 4,
       "img": "https://raw.githubusercontent.com/FortOfFans/HSR/main/spriteoutput/avataricon/avatar/1002.png",
@@ -19,7 +19,7 @@ const initialCharacters = [
     },
     {
       "name": "Himeko",
-      "combatType": "https://api.yatta.top/hsr/assets/UI/attribute/IconAttributeFire.png",
+      "element": "https://api.yatta.top/hsr/assets/UI/attribute/IconAttributeFire.png",
       "path": "https://raw.githubusercontent.com/FortOfFans/HSR/main/spriteoutput/avatarprofessiontattoo/profession/BgPathsnMage.png",
       "rarity": 5,
       "img": "https://raw.githubusercontent.com/FortOfFans/HSR/main/spriteoutput/avataricon/avatar/1003.png",
@@ -28,7 +28,7 @@ const initialCharacters = [
     },
     {
       "name": "Welt",
-      "combatType": "https://api.yatta.top/hsr/assets/UI/attribute/IconAttributeImaginary.png",
+      "element": "https://api.yatta.top/hsr/assets/UI/attribute/IconAttributeImaginary.png",
       "path": "https://raw.githubusercontent.com/FortOfFans/HSR/main/spriteoutput/avatarprofessiontattoo/profession/BgPathsWarlock.png",
       "rarity": 5,
       "img": "https://raw.githubusercontent.com/FortOfFans/HSR/main/spriteoutput/avataricon/avatar/1004.png",
@@ -37,7 +37,7 @@ const initialCharacters = [
     },
     {
       "name": "Kafka",
-      "combatType": "https://api.yatta.top/hsr/assets/UI/attribute/IconAttributeThunder.png",
+      "element": "https://api.yatta.top/hsr/assets/UI/attribute/IconAttributeThunder.png",
       "path": "https://raw.githubusercontent.com/FortOfFans/HSR/main/spriteoutput/avatarprofessiontattoo/profession/BgPathsWarlock.png",
       "rarity": 5,
       "img": "https://raw.githubusercontent.com/FortOfFans/HSR/main/spriteoutput/avataricon/avatar/1005.png",
@@ -46,7 +46,7 @@ const initialCharacters = [
     },
     {
       "name": "Silver Wolf",
-      "combatType": "https://api.yatta.top/hsr/assets/UI/attribute/IconAttributeQuantum.png",
+      "element": "https://api.yatta.top/hsr/assets/UI/attribute/IconAttributeQuantum.png",
       "path": "https://raw.githubusercontent.com/FortOfFans/HSR/main/spriteoutput/avatarprofessiontattoo/profession/BgPathsWarlock.png",
       "rarity": 5,
       "img": "https://raw.githubusercontent.com/FortOfFans/HSR/main/spriteoutput/avataricon/avatar/1006.png",
@@ -55,7 +55,7 @@ const initialCharacters = [
     },
     {
       "name": "Arlan",
-      "combatType": "https://api.yatta.top/hsr/assets/UI/attribute/IconAttributeThunder.png",
+      "element": "https://api.yatta.top/hsr/assets/UI/attribute/IconAttributeThunder.png",
       "path": "https://raw.githubusercontent.com/FortOfFans/HSR/main/spriteoutput/avatarprofessiontattoo/profession/BgPathsWarrior.png",
       "rarity": 4,
       "img": "https://raw.githubusercontent.com/FortOfFans/HSR/main/spriteoutput/avataricon/avatar/1008.png",
@@ -64,7 +64,7 @@ const initialCharacters = [
     },
     {
       "name": "Asta",
-      "combatType": "https://api.yatta.top/hsr/assets/UI/attribute/IconAttributeFire.png",
+      "element": "https://api.yatta.top/hsr/assets/UI/attribute/IconAttributeFire.png",
       "path": "https://raw.githubusercontent.com/FortOfFans/HSR/main/spriteoutput/avatarprofessiontattoo/profession/BgPathsShaman.png",
       "rarity": 4,
       "img": "https://raw.githubusercontent.com/FortOfFans/HSR/main/spriteoutput/avataricon/avatar/1009.png",
@@ -73,7 +73,7 @@ const initialCharacters = [
     },
     {
       "name": "Herta",
-      "combatType": "https://api.yatta.top/hsr/assets/UI/attribute/IconAttributeIce.png",
+      "element": "https://api.yatta.top/hsr/assets/UI/attribute/IconAttributeIce.png",
       "path": "https://raw.githubusercontent.com/FortOfFans/HSR/main/spriteoutput/avatarprofessiontattoo/profession/BgPathsnMage.png",
       "rarity": 4,
       "img": "https://raw.githubusercontent.com/FortOfFans/HSR/main/spriteoutput/avataricon/avatar/1013.png",
@@ -82,7 +82,7 @@ const initialCharacters = [
     },
     {
       "name": "Bronya",
-      "combatType": "https://api.yatta.top/hsr/assets/UI/attribute/IconAttributeWind.png",
+      "element": "https://api.yatta.top/hsr/assets/UI/attribute/IconAttributeWind.png",
       "path": "https://raw.githubusercontent.com/FortOfFans/HSR/main/spriteoutput/avatarprofessiontattoo/profession/BgPathsShaman.png",
       "rarity": 5,
       "img": "https://raw.githubusercontent.com/FortOfFans/HSR/main/spriteoutput/avataricon/avatar/1101.png",
@@ -91,7 +91,7 @@ const initialCharacters = [
     },
     {
       "name": "Seele",
-      "combatType": "https://api.yatta.top/hsr/assets/UI/attribute/IconAttributeQuantum.png",
+      "element": "https://api.yatta.top/hsr/assets/UI/attribute/IconAttributeQuantum.png",
       "path": "https://raw.githubusercontent.com/FortOfFans/HSR/main/spriteoutput/avatarprofessiontattoo/profession/BgPathsRogue.png",
       "rarity": 5,
       "img": "https://raw.githubusercontent.com/FortOfFans/HSR/main/spriteoutput/avataricon/avatar/1102.png",
@@ -100,7 +100,7 @@ const initialCharacters = [
     },
     {
       "name": "Serval",
-      "combatType": "https://api.yatta.top/hsr/assets/UI/attribute/IconAttributeThunder.png",
+      "element": "https://api.yatta.top/hsr/assets/UI/attribute/IconAttributeThunder.png",
       "path": "https://raw.githubusercontent.com/FortOfFans/HSR/main/spriteoutput/avatarprofessiontattoo/profession/BgPathsnMage.png",
       "rarity": 4,
       "img": "https://raw.githubusercontent.com/FortOfFans/HSR/main/spriteoutput/avataricon/avatar/1103.png",
@@ -109,7 +109,7 @@ const initialCharacters = [
     },
     {
       "name": "Gepard",
-      "combatType": "https://api.yatta.top/hsr/assets/UI/attribute/IconAttributeIce.png",
+      "element": "https://api.yatta.top/hsr/assets/UI/attribute/IconAttributeIce.png",
       "path": "https://raw.githubusercontent.com/FortOfFans/HSR/main/spriteoutput/avatarprofessiontattoo/profession/BgPathsKnight.png",
       "rarity": 5,
       "img": "https://raw.githubusercontent.com/FortOfFans/HSR/main/spriteoutput/avataricon/avatar/1104.png",
@@ -118,7 +118,7 @@ const initialCharacters = [
     },
     {
       "name": "Natasha",
-      "combatType": "https://api.yatta.top/hsr/assets/UI/attribute/IconAttributePhysical.png",
+      "element": "https://api.yatta.top/hsr/assets/UI/attribute/IconAttributePhysical.png",
       "path": "https://raw.githubusercontent.com/FortOfFans/HSR/main/spriteoutput/avatarprofessiontattoo/profession/BgPathsPirest.png",
       "rarity": 4,
       "img": "https://raw.githubusercontent.com/FortOfFans/HSR/main/spriteoutput/avataricon/avatar/1105.png",
@@ -127,7 +127,7 @@ const initialCharacters = [
     },
     {
       "name": "Pela",
-      "combatType": "https://api.yatta.top/hsr/assets/UI/attribute/IconAttributeIce.png",
+      "element": "https://api.yatta.top/hsr/assets/UI/attribute/IconAttributeIce.png",
       "path": "https://raw.githubusercontent.com/FortOfFans/HSR/main/spriteoutput/avatarprofessiontattoo/profession/BgPathsWarlock.png",
       "rarity": 4,
       "img": "https://raw.githubusercontent.com/FortOfFans/HSR/main/spriteoutput/avataricon/avatar/1106.png",
@@ -136,7 +136,7 @@ const initialCharacters = [
     },
     {
       "name": "Clara",
-      "combatType": "https://api.yatta.top/hsr/assets/UI/attribute/IconAttributePhysical.png",
+      "element": "https://api.yatta.top/hsr/assets/UI/attribute/IconAttributePhysical.png",
       "path": "https://raw.githubusercontent.com/FortOfFans/HSR/main/spriteoutput/avatarprofessiontattoo/profession/BgPathsWarrior.png",
       "rarity": 5,
       "img": "https://raw.githubusercontent.com/FortOfFans/HSR/main/spriteoutput/avataricon/avatar/1107.png",
@@ -145,7 +145,7 @@ const initialCharacters = [
     },
     {
       "name": "Sampo",
-      "combatType": "https://api.yatta.top/hsr/assets/UI/attribute/IconAttributeWind.png",
+      "element": "https://api.yatta.top/hsr/assets/UI/attribute/IconAttributeWind.png",
       "path": "https://raw.githubusercontent.com/FortOfFans/HSR/main/spriteoutput/avatarprofessiontattoo/profession/BgPathsWarlock.png",
       "rarity": 4,
       "img": "https://raw.githubusercontent.com/FortOfFans/HSR/main/spriteoutput/avataricon/avatar/1108.png",
@@ -154,7 +154,7 @@ const initialCharacters = [
     },
     {
       "name": "Hook",
-      "combatType": "https://api.yatta.top/hsr/assets/UI/attribute/IconAttributeFire.png",
+      "element": "https://api.yatta.top/hsr/assets/UI/attribute/IconAttributeFire.png",
       "path": "https://raw.githubusercontent.com/FortOfFans/HSR/main/spriteoutput/avatarprofessiontattoo/profession/BgPathsWarrior.png",
       "rarity": 4,
       "img": "https://raw.githubusercontent.com/FortOfFans/HSR/main/spriteoutput/avataricon/avatar/1109.png",
@@ -163,7 +163,7 @@ const initialCharacters = [
     },
     {
       "name": "Lynx",
-      "combatType": "https://api.yatta.top/hsr/assets/UI/attribute/IconAttributeQuantum.png",
+      "element": "https://api.yatta.top/hsr/assets/UI/attribute/IconAttributeQuantum.png",
       "path": "https://raw.githubusercontent.com/FortOfFans/HSR/main/spriteoutput/avatarprofessiontattoo/profession/BgPathsPirest.png",
       "rarity": 4,
       "img": "https://raw.githubusercontent.com/FortOfFans/HSR/main/spriteoutput/avataricon/avatar/1110.png",
@@ -172,7 +172,7 @@ const initialCharacters = [
     },
     {
       "name": "Luka",
-      "combatType": "https://api.yatta.top/hsr/assets/UI/attribute/IconAttributePhysical.png",
+      "element": "https://api.yatta.top/hsr/assets/UI/attribute/IconAttributePhysical.png",
       "path": "https://raw.githubusercontent.com/FortOfFans/HSR/main/spriteoutput/avatarprofessiontattoo/profession/BgPathsWarlock.png",
       "rarity": 4,
       "img": "https://raw.githubusercontent.com/FortOfFans/HSR/main/spriteoutput/avataricon/avatar/1111.png",
@@ -181,7 +181,7 @@ const initialCharacters = [
     },
     {
       "name": "Topaz & Numby",
-      "combatType": "https://api.yatta.top/hsr/assets/UI/attribute/IconAttributeFire.png",
+      "element": "https://api.yatta.top/hsr/assets/UI/attribute/IconAttributeFire.png",
       "path": "https://raw.githubusercontent.com/FortOfFans/HSR/main/spriteoutput/avatarprofessiontattoo/profession/BgPathsRogue.png",
       "rarity": 5,
       "img": "https://raw.githubusercontent.com/FortOfFans/HSR/main/spriteoutput/avataricon/avatar/1112.png",
@@ -190,7 +190,7 @@ const initialCharacters = [
     },
     {
       "name": "Qingque",
-      "combatType": "https://api.yatta.top/hsr/assets/UI/attribute/IconAttributeQuantum.png",
+      "element": "https://api.yatta.top/hsr/assets/UI/attribute/IconAttributeQuantum.png",
       "path": "https://raw.githubusercontent.com/FortOfFans/HSR/main/spriteoutput/avatarprofessiontattoo/profession/BgPathsnMage.png",
       "rarity": 4,
       "img": "https://raw.githubusercontent.com/FortOfFans/HSR/main/spriteoutput/avataricon/avatar/1201.png",
@@ -199,7 +199,7 @@ const initialCharacters = [
     },
     {
       "name": "Tingyun",
-      "combatType": "https://api.yatta.top/hsr/assets/UI/attribute/IconAttributeThunder.png",
+      "element": "https://api.yatta.top/hsr/assets/UI/attribute/IconAttributeThunder.png",
       "path": "https://raw.githubusercontent.com/FortOfFans/HSR/main/spriteoutput/avatarprofessiontattoo/profession/BgPathsShaman.png",
       "rarity": 4,
       "img": "https://raw.githubusercontent.com/FortOfFans/HSR/main/spriteoutput/avataricon/avatar/1202.png",
@@ -208,7 +208,7 @@ const initialCharacters = [
     },
     {
       "name": "Luocha",
-      "combatType": "https://api.yatta.top/hsr/assets/UI/attribute/IconAttributeImaginary.png",
+      "element": "https://api.yatta.top/hsr/assets/UI/attribute/IconAttributeImaginary.png",
       "path": "https://raw.githubusercontent.com/FortOfFans/HSR/main/spriteoutput/avatarprofessiontattoo/profession/BgPathsPirest.png",
       "rarity": 5,
       "img": "https://raw.githubusercontent.com/FortOfFans/HSR/main/spriteoutput/avataricon/avatar/1203.png",
@@ -217,7 +217,7 @@ const initialCharacters = [
     },
     {
       "name": "Jing Yuan",
-      "combatType": "https://api.yatta.top/hsr/assets/UI/attribute/IconAttributeThunder.png",
+      "element": "https://api.yatta.top/hsr/assets/UI/attribute/IconAttributeThunder.png",
       "path": "https://raw.githubusercontent.com/FortOfFans/HSR/main/spriteoutput/avatarprofessiontattoo/profession/BgPathsnMage.png",
       "rarity": 5,
       "img": "https://raw.githubusercontent.com/FortOfFans/HSR/main/spriteoutput/avataricon/avatar/1204.png",
@@ -226,7 +226,7 @@ const initialCharacters = [
     },
     {
       "name": "Blade",
-      "combatType": "https://api.yatta.top/hsr/assets/UI/attribute/IconAttributeWind.png",
+      "element": "https://api.yatta.top/hsr/assets/UI/attribute/IconAttributeWind.png",
       "path": "https://raw.githubusercontent.com/FortOfFans/HSR/main/spriteoutput/avatarprofessiontattoo/profession/BgPathsWarrior.png",
       "rarity": 5,
       "img": "https://raw.githubusercontent.com/FortOfFans/HSR/main/spriteoutput/avataricon/avatar/1205.png",
@@ -235,7 +235,7 @@ const initialCharacters = [
     },
     {
       "name": "Sushang",
-      "combatType": "https://api.yatta.top/hsr/assets/UI/attribute/IconAttributePhysical.png",
+      "element": "https://api.yatta.top/hsr/assets/UI/attribute/IconAttributePhysical.png",
       "path": "https://raw.githubusercontent.com/FortOfFans/HSR/main/spriteoutput/avatarprofessiontattoo/profession/BgPathsRogue.png",
       "rarity": 4,
       "img": "https://raw.githubusercontent.com/FortOfFans/HSR/main/spriteoutput/avataricon/avatar/1206.png",
@@ -244,7 +244,7 @@ const initialCharacters = [
     },
     {
       "name": "Yukong",
-      "combatType": "https://api.yatta.top/hsr/assets/UI/attribute/IconAttributeImaginary.png",
+      "element": "https://api.yatta.top/hsr/assets/UI/attribute/IconAttributeImaginary.png",
       "path": "https://raw.githubusercontent.com/FortOfFans/HSR/main/spriteoutput/avatarprofessiontattoo/profession/BgPathsShaman.png",
       "rarity": 4,
       "img": "https://raw.githubusercontent.com/FortOfFans/HSR/main/spriteoutput/avataricon/avatar/1207.png",
@@ -253,7 +253,7 @@ const initialCharacters = [
     },
     {
       "name": "Fu Xuan",
-      "combatType": "https://api.yatta.top/hsr/assets/UI/attribute/IconAttributeQuantum.png",
+      "element": "https://api.yatta.top/hsr/assets/UI/attribute/IconAttributeQuantum.png",
       "path": "https://raw.githubusercontent.com/FortOfFans/HSR/main/spriteoutput/avatarprofessiontattoo/profession/BgPathsKnight.png",
       "rarity": 5,
       "img": "https://raw.githubusercontent.com/FortOfFans/HSR/main/spriteoutput/avataricon/avatar/1208.png",
@@ -262,7 +262,7 @@ const initialCharacters = [
     },
     {
       "name": "Yanqing",
-      "combatType": "https://api.yatta.top/hsr/assets/UI/attribute/IconAttributeIce.png",
+      "element": "https://api.yatta.top/hsr/assets/UI/attribute/IconAttributeIce.png",
       "path": "https://raw.githubusercontent.com/FortOfFans/HSR/main/spriteoutput/avatarprofessiontattoo/profession/BgPathsRogue.png",
       "rarity": 5,
       "img": "https://raw.githubusercontent.com/FortOfFans/HSR/main/spriteoutput/avataricon/avatar/1209.png",
@@ -271,7 +271,7 @@ const initialCharacters = [
     },
     {
       "name": "Guinaifen",
-      "combatType": "https://api.yatta.top/hsr/assets/UI/attribute/IconAttributeFire.png",
+      "element": "https://api.yatta.top/hsr/assets/UI/attribute/IconAttributeFire.png",
       "path": "https://raw.githubusercontent.com/FortOfFans/HSR/main/spriteoutput/avatarprofessiontattoo/profession/BgPathsWarlock.png",
       "rarity": 4,
       "img": "https://raw.githubusercontent.com/FortOfFans/HSR/main/spriteoutput/avataricon/avatar/1210.png",
@@ -280,7 +280,7 @@ const initialCharacters = [
     },
     {
       "name": "Bailu",
-      "combatType": "https://api.yatta.top/hsr/assets/UI/attribute/IconAttributeThunder.png",
+      "element": "https://api.yatta.top/hsr/assets/UI/attribute/IconAttributeThunder.png",
       "path": "https://raw.githubusercontent.com/FortOfFans/HSR/main/spriteoutput/avatarprofessiontattoo/profession/BgPathsPirest.png",
       "rarity": 5,
       "img": "https://raw.githubusercontent.com/FortOfFans/HSR/main/spriteoutput/avataricon/avatar/1211.png",
@@ -289,7 +289,7 @@ const initialCharacters = [
     },
     {
       "name": "Jingliu",
-      "combatType": "https://api.yatta.top/hsr/assets/UI/attribute/IconAttributeIce.png",
+      "element": "https://api.yatta.top/hsr/assets/UI/attribute/IconAttributeIce.png",
       "path": "https://raw.githubusercontent.com/FortOfFans/HSR/main/spriteoutput/avatarprofessiontattoo/profession/BgPathsWarrior.png",
       "rarity": 5,
       "img": "https://raw.githubusercontent.com/FortOfFans/HSR/main/spriteoutput/avataricon/avatar/1212.png",
@@ -298,7 +298,7 @@ const initialCharacters = [
     },
     {
       "name": "Dan Heng • Imbibitor Lunae",
-      "combatType": "https://api.yatta.top/hsr/assets/UI/attribute/IconAttributeImaginary.png",
+      "element": "https://api.yatta.top/hsr/assets/UI/attribute/IconAttributeImaginary.png",
       "path": "https://raw.githubusercontent.com/FortOfFans/HSR/main/spriteoutput/avatarprofessiontattoo/profession/BgPathsWarrior.png",
       "rarity": 5,
       "img": "https://raw.githubusercontent.com/FortOfFans/HSR/main/spriteoutput/avataricon/avatar/1213.png",
@@ -307,7 +307,7 @@ const initialCharacters = [
     },
     {
       "name": "Xueyi",
-      "combatType": "https://api.yatta.top/hsr/assets/UI/attribute/IconAttributeQuantum.png",
+      "element": "https://api.yatta.top/hsr/assets/UI/attribute/IconAttributeQuantum.png",
       "path": "https://raw.githubusercontent.com/FortOfFans/HSR/main/spriteoutput/avatarprofessiontattoo/profession/BgPathsWarrior.png",
       "rarity": 4,
       "img": "https://raw.githubusercontent.com/FortOfFans/HSR/main/spriteoutput/avataricon/avatar/1214.png",
@@ -316,7 +316,7 @@ const initialCharacters = [
     },
     {
       "name": "Hanya",
-      "combatType": "https://api.yatta.top/hsr/assets/UI/attribute/IconAttributePhysical.png",
+      "element": "https://api.yatta.top/hsr/assets/UI/attribute/IconAttributePhysical.png",
       "path": "https://raw.githubusercontent.com/FortOfFans/HSR/main/spriteoutput/avatarprofessiontattoo/profession/BgPathsShaman.png",
       "rarity": 4,
       "img": "https://raw.githubusercontent.com/FortOfFans/HSR/main/spriteoutput/avataricon/avatar/1215.png",
@@ -325,7 +325,7 @@ const initialCharacters = [
     },
     {
       "name": "Huohuo",
-      "combatType": "https://api.yatta.top/hsr/assets/UI/attribute/IconAttributeWind.png",
+      "element": "https://api.yatta.top/hsr/assets/UI/attribute/IconAttributeWind.png",
       "path": "https://raw.githubusercontent.com/FortOfFans/HSR/main/spriteoutput/avatarprofessiontattoo/profession/BgPathsPirest.png",
       "rarity": 5,
       "img": "https://raw.githubusercontent.com/FortOfFans/HSR/main/spriteoutput/avataricon/avatar/1217.png",
@@ -334,7 +334,7 @@ const initialCharacters = [
     },
     {
       "name": "Jiaoqiu",
-      "combatType": "https://api.yatta.top/hsr/assets/UI/attribute/IconAttributeFire.png",
+      "element": "https://api.yatta.top/hsr/assets/UI/attribute/IconAttributeFire.png",
       "path": "https://raw.githubusercontent.com/FortOfFans/HSR/main/spriteoutput/avatarprofessiontattoo/profession/BgPathsWarlock.png",
       "rarity": 5,
       "img": "https://raw.githubusercontent.com/FortOfFans/HSR/main/spriteoutput/avataricon/avatar/1218.png",
@@ -343,7 +343,7 @@ const initialCharacters = [
     },
     {
       "name": "Feixiao",
-      "combatType": "https://api.yatta.top/hsr/assets/UI/attribute/IconAttributeWind.png",
+      "element": "https://api.yatta.top/hsr/assets/UI/attribute/IconAttributeWind.png",
       "path": "https://raw.githubusercontent.com/FortOfFans/HSR/main/spriteoutput/avatarprofessiontattoo/profession/BgPathsRogue.png",
       "rarity": 5,
       "img": "https://raw.githubusercontent.com/FortOfFans/HSR/main/spriteoutput/avataricon/avatar/1220.png",
@@ -352,7 +352,7 @@ const initialCharacters = [
     },
     {
       "name": "Yunli",
-      "combatType": "https://api.yatta.top/hsr/assets/UI/attribute/IconAttributePhysical.png",
+      "element": "https://api.yatta.top/hsr/assets/UI/attribute/IconAttributePhysical.png",
       "path": "https://raw.githubusercontent.com/FortOfFans/HSR/main/spriteoutput/avatarprofessiontattoo/profession/BgPathsWarrior.png",
       "rarity": 5,
       "img": "https://raw.githubusercontent.com/FortOfFans/HSR/main/spriteoutput/avataricon/avatar/1221.png",
@@ -361,7 +361,7 @@ const initialCharacters = [
     },
     {
       "name": "Lingsha",
-      "combatType": "https://api.yatta.top/hsr/assets/UI/attribute/IconAttributeFire.png",
+      "element": "https://api.yatta.top/hsr/assets/UI/attribute/IconAttributeFire.png",
       "path": "https://raw.githubusercontent.com/FortOfFans/HSR/main/spriteoutput/avatarprofessiontattoo/profession/BgPathsPirest.png",
       "rarity": 5,
       "img": "https://raw.githubusercontent.com/FortOfFans/HSR/main/spriteoutput/avataricon/avatar/1222.png",
@@ -370,7 +370,7 @@ const initialCharacters = [
     },
     {
       "name": "Moze",
-      "combatType": "https://api.yatta.top/hsr/assets/UI/attribute/IconAttributeThunder.png",
+      "element": "https://api.yatta.top/hsr/assets/UI/attribute/IconAttributeThunder.png",
       "path": "https://raw.githubusercontent.com/FortOfFans/HSR/main/spriteoutput/avatarprofessiontattoo/profession/BgPathsRogue.png",
       "rarity": 4,
       "img": "https://raw.githubusercontent.com/FortOfFans/HSR/main/spriteoutput/avataricon/avatar/1223.png",
@@ -379,7 +379,7 @@ const initialCharacters = [
     },
     {
       "name": "March 7th (Hunter)",
-      "combatType": "https://api.yatta.top/hsr/assets/UI/attribute/IconAttributeImaginary.png",
+      "element": "https://api.yatta.top/hsr/assets/UI/attribute/IconAttributeImaginary.png",
       "path": "https://raw.githubusercontent.com/FortOfFans/HSR/main/spriteoutput/avatarprofessiontattoo/profession/BgPathsRogue.png",
       "rarity": 4,
       "img": "https://raw.githubusercontent.com/FortOfFans/HSR/main/spriteoutput/avataricon/avatar/1224.png",
@@ -388,7 +388,7 @@ const initialCharacters = [
     },
     {
       "name": "Fugue",
-      "combatType": "https://api.yatta.top/hsr/assets/UI/attribute/IconAttributeFire.png",
+      "element": "https://api.yatta.top/hsr/assets/UI/attribute/IconAttributeFire.png",
       "path": "https://raw.githubusercontent.com/FortOfFans/HSR/main/spriteoutput/avatarprofessiontattoo/profession/BgPathsWarlock.png",
       "rarity": 5,
       "img": "https://raw.githubusercontent.com/FortOfFans/HSR/main/spriteoutput/avataricon/avatar/1225.png",
@@ -397,7 +397,7 @@ const initialCharacters = [
     },
     {
       "name": "Gallagher",
-      "combatType": "https://api.yatta.top/hsr/assets/UI/attribute/IconAttributeFire.png",
+      "element": "https://api.yatta.top/hsr/assets/UI/attribute/IconAttributeFire.png",
       "path": "https://raw.githubusercontent.com/FortOfFans/HSR/main/spriteoutput/avatarprofessiontattoo/profession/BgPathsPirest.png",
       "rarity": 4,
       "img": "https://raw.githubusercontent.com/FortOfFans/HSR/main/spriteoutput/avataricon/avatar/1301.png",
@@ -406,7 +406,7 @@ const initialCharacters = [
     },
     {
       "name": "Argenti",
-      "combatType": "https://api.yatta.top/hsr/assets/UI/attribute/IconAttributePhysical.png",
+      "element": "https://api.yatta.top/hsr/assets/UI/attribute/IconAttributePhysical.png",
       "path": "https://raw.githubusercontent.com/FortOfFans/HSR/main/spriteoutput/avatarprofessiontattoo/profession/BgPathsnMage.png",
       "rarity": 5,
       "img": "https://raw.githubusercontent.com/FortOfFans/HSR/main/spriteoutput/avataricon/avatar/1302.png",
@@ -415,7 +415,7 @@ const initialCharacters = [
     },
     {
       "name": "Ruan Mei",
-      "combatType": "https://api.yatta.top/hsr/assets/UI/attribute/IconAttributeIce.png",
+      "element": "https://api.yatta.top/hsr/assets/UI/attribute/IconAttributeIce.png",
       "path": "https://raw.githubusercontent.com/FortOfFans/HSR/main/spriteoutput/avatarprofessiontattoo/profession/BgPathsShaman.png",
       "rarity": 5,
       "img": "https://raw.githubusercontent.com/FortOfFans/HSR/main/spriteoutput/avataricon/avatar/1303.png",
@@ -424,7 +424,7 @@ const initialCharacters = [
     },
     {
       "name": "Aventurine",
-      "combatType": "https://api.yatta.top/hsr/assets/UI/attribute/IconAttributeImaginary.png",
+      "element": "https://api.yatta.top/hsr/assets/UI/attribute/IconAttributeImaginary.png",
       "path": "https://raw.githubusercontent.com/FortOfFans/HSR/main/spriteoutput/avatarprofessiontattoo/profession/BgPathsKnight.png",
       "rarity": 5,
       "img": "https://raw.githubusercontent.com/FortOfFans/HSR/main/spriteoutput/avataricon/avatar/1304.png",
@@ -433,7 +433,7 @@ const initialCharacters = [
     },
     {
       "name": "Dr. Ratio",
-      "combatType": "https://api.yatta.top/hsr/assets/UI/attribute/IconAttributeImaginary.png",
+      "element": "https://api.yatta.top/hsr/assets/UI/attribute/IconAttributeImaginary.png",
       "path": "https://raw.githubusercontent.com/FortOfFans/HSR/main/spriteoutput/avatarprofessiontattoo/profession/BgPathsRogue.png",
       "rarity": 5,
       "img": "https://raw.githubusercontent.com/FortOfFans/HSR/main/spriteoutput/avataricon/avatar/1305.png",
@@ -442,7 +442,7 @@ const initialCharacters = [
     },
     {
       "name": "Sparkle",
-      "combatType": "https://api.yatta.top/hsr/assets/UI/attribute/IconAttributeQuantum.png",
+      "element": "https://api.yatta.top/hsr/assets/UI/attribute/IconAttributeQuantum.png",
       "path": "https://raw.githubusercontent.com/FortOfFans/HSR/main/spriteoutput/avatarprofessiontattoo/profession/BgPathsShaman.png",
       "rarity": 5,
       "img": "https://raw.githubusercontent.com/FortOfFans/HSR/main/spriteoutput/avataricon/avatar/1306.png",
@@ -451,7 +451,7 @@ const initialCharacters = [
     },
     {
       "name": "Black Swan",
-      "combatType": "https://api.yatta.top/hsr/assets/UI/attribute/IconAttributeWind.png",
+      "element": "https://api.yatta.top/hsr/assets/UI/attribute/IconAttributeWind.png",
       "path": "https://raw.githubusercontent.com/FortOfFans/HSR/main/spriteoutput/avatarprofessiontattoo/profession/BgPathsWarlock.png",
       "rarity": 5,
       "img": "https://raw.githubusercontent.com/FortOfFans/HSR/main/spriteoutput/avataricon/avatar/1307.png",
@@ -460,7 +460,7 @@ const initialCharacters = [
     },
     {
       "name": "Acheron",
-      "combatType": "https://api.yatta.top/hsr/assets/UI/attribute/IconAttributeThunder.png",
+      "element": "https://api.yatta.top/hsr/assets/UI/attribute/IconAttributeThunder.png",
       "path": "https://raw.githubusercontent.com/FortOfFans/HSR/main/spriteoutput/avatarprofessiontattoo/profession/BgPathsWarlock.png",
       "rarity": 5,
       "img": "https://raw.githubusercontent.com/FortOfFans/HSR/main/spriteoutput/avataricon/avatar/1308.png",
@@ -469,7 +469,7 @@ const initialCharacters = [
     },
     {
       "name": "Robin",
-      "combatType": "https://api.yatta.top/hsr/assets/UI/attribute/IconAttributePhysical.png",
+      "element": "https://api.yatta.top/hsr/assets/UI/attribute/IconAttributePhysical.png",
       "path": "https://raw.githubusercontent.com/FortOfFans/HSR/main/spriteoutput/avatarprofessiontattoo/profession/BgPathsShaman.png",
       "rarity": 5,
       "img": "https://raw.githubusercontent.com/FortOfFans/HSR/main/spriteoutput/avataricon/avatar/1309.png",
@@ -478,7 +478,7 @@ const initialCharacters = [
     },
     {
       "name": "Firefly",
-      "combatType": "https://api.yatta.top/hsr/assets/UI/attribute/IconAttributeFire.png",
+      "element": "https://api.yatta.top/hsr/assets/UI/attribute/IconAttributeFire.png",
       "path": "https://raw.githubusercontent.com/FortOfFans/HSR/main/spriteoutput/avatarprofessiontattoo/profession/BgPathsWarrior.png",
       "rarity": 5,
       "img": "https://raw.githubusercontent.com/FortOfFans/HSR/main/spriteoutput/avataricon/avatar/1310.png",
@@ -487,7 +487,7 @@ const initialCharacters = [
     },
     {
       "name": "Misha",
-      "combatType": "https://api.yatta.top/hsr/assets/UI/attribute/IconAttributeIce.png",
+      "element": "https://api.yatta.top/hsr/assets/UI/attribute/IconAttributeIce.png",
       "path": "https://raw.githubusercontent.com/FortOfFans/HSR/main/spriteoutput/avatarprofessiontattoo/profession/BgPathsWarrior.png",
       "rarity": 4,
       "img": "https://raw.githubusercontent.com/FortOfFans/HSR/main/spriteoutput/avataricon/avatar/1312.png",
@@ -496,7 +496,7 @@ const initialCharacters = [
     },
     {
       "name": "Sunday",
-      "combatType": "https://api.yatta.top/hsr/assets/UI/attribute/IconAttributeImaginary.png",
+      "element": "https://api.yatta.top/hsr/assets/UI/attribute/IconAttributeImaginary.png",
       "path": "https://raw.githubusercontent.com/FortOfFans/HSR/main/spriteoutput/avatarprofessiontattoo/profession/BgPathsShaman.png",
       "rarity": 5,
       "img": "https://raw.githubusercontent.com/FortOfFans/HSR/main/spriteoutput/avataricon/avatar/1313.png",
@@ -505,7 +505,7 @@ const initialCharacters = [
     },
     {
       "name": "Jade",
-      "combatType": "https://api.yatta.top/hsr/assets/UI/attribute/IconAttributeQuantum.png",
+      "element": "https://api.yatta.top/hsr/assets/UI/attribute/IconAttributeQuantum.png",
       "path": "https://raw.githubusercontent.com/FortOfFans/HSR/main/spriteoutput/avatarprofessiontattoo/profession/BgPathsnMage.png",
       "rarity": 5,
       "img": "https://raw.githubusercontent.com/FortOfFans/HSR/main/spriteoutput/avataricon/avatar/1314.png",
@@ -514,7 +514,7 @@ const initialCharacters = [
     },
     {
       "name": "Boothill",
-      "combatType": "https://api.yatta.top/hsr/assets/UI/attribute/IconAttributePhysical.png",
+      "element": "https://api.yatta.top/hsr/assets/UI/attribute/IconAttributePhysical.png",
       "path": "https://raw.githubusercontent.com/FortOfFans/HSR/main/spriteoutput/avatarprofessiontattoo/profession/BgPathsRogue.png",
       "rarity": 5,
       "img": "https://raw.githubusercontent.com/FortOfFans/HSR/main/spriteoutput/avataricon/avatar/1315.png",
@@ -523,7 +523,7 @@ const initialCharacters = [
     },
     {
       "name": "Rappa",
-      "combatType": "https://api.yatta.top/hsr/assets/UI/attribute/IconAttributeImaginary.png",
+      "element": "https://api.yatta.top/hsr/assets/UI/attribute/IconAttributeImaginary.png",
       "path": "https://raw.githubusercontent.com/FortOfFans/HSR/main/spriteoutput/avatarprofessiontattoo/profession/BgPathsnMage.png",
       "rarity": 5,
       "img": "https://raw.githubusercontent.com/FortOfFans/HSR/main/spriteoutput/avataricon/avatar/1317.png",
@@ -532,7 +532,7 @@ const initialCharacters = [
     },
     {
       "name": "The Herta",
-      "combatType": "https://api.yatta.top/hsr/assets/UI/attribute/IconAttributeIce.png",
+      "element": "https://api.yatta.top/hsr/assets/UI/attribute/IconAttributeIce.png",
       "path": "https://raw.githubusercontent.com/FortOfFans/HSR/main/spriteoutput/avatarprofessiontattoo/profession/BgPathsnMage.png",
       "rarity": 5,
       "img": "/img/herta_icon.webp",
@@ -541,7 +541,7 @@ const initialCharacters = [
     },
     {
       "name": "Aglaea",
-      "combatType": "https://api.yatta.top/hsr/assets/UI/attribute/IconAttributeThunder.png",
+      "element": "https://api.yatta.top/hsr/assets/UI/attribute/IconAttributeThunder.png",
       "path": "https://raw.githubusercontent.com/FortOfFans/HSR/main/spriteoutput/avatarprofessiontattoo/profession/BgPathsMemory.png",
       "rarity": 5,
       "img": "/img/aglaea_icon.webp",
