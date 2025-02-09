@@ -14,7 +14,6 @@ export default function Home() {
   const [guess, setGuess] = useState(0);
   const [cheat, setCheat] = useState(false);
   const [audio, setAudio] = useState(null);
-  const [dontSayNWord, setDontSayNWord] = useState(false);
 
   const getRandomCharacter = () => {
     const randomIndex = Math.floor(Math.random() * initialCharacters.length);
@@ -54,12 +53,6 @@ export default function Home() {
       }, 3000);
       setGuess(0);
       playAudio();
-    }
-
-    // dont say n word
-    if (input.toLowerCase() == "nigg") {
-      document.getElementById('search').value = '';
-      setDontSayNWord(true);
     }
 
     setSearch(data);
@@ -125,7 +118,7 @@ export default function Home() {
   return (
     <div className="relative flex flex-col items-center mx-auto px-2">
       <div className="w-full flex justify-between p-4">
-        <Link href="/"> &larr; Back</Link>
+        <Link href="/" className="hover:text-orange-400 duration-150"> &larr; Back</Link>
         {cheat ? <div className="absolute mt-7 lg:mt-10 bg-black border text-xs lg:text-base px-8 py-2 z-20 cheatActivated">Cheat activated</div> : null}
         <div>
           <p>Guess: {guess}</p>
@@ -216,23 +209,6 @@ export default function Home() {
           </div>
         </div>
       ) : null }
-
-      {/* ay ay ay */}
-      {(dontSayNWord) ? (
-        <div className="fixed w-full h-full top-0 bg-black bg-opacity-70 flex justify-center items-center z-10">
-          <div className="fixed w-[350px] lg:w-[500px] border border-[#eee] bg-[#171717] rounded-[12px_0_0_0] overflow-hidden scale-in-center">
-            <div className="bg-[#eee] text-black w-full py-2">
-              <p className="my-auto text-center">HEY</p>
-            </div>
-            <div className="flex flex-col justify-center items-center">
-              <Image width={100} height={100} src="/img/dontsayit.gif"  alt="" className="mt-8 w-20 h-20 object-cover"/>
-              <p className="mt-2 uppercase text-center">Don't say again</p>
-              <button onClick={() => setDontSayNWord(false)} className="bg-[#eee] text-black mt-6 mb-4 p-2 rounded-[12px_0_0_0]">OK LIL BRO</button>
-            </div>
-          </div>
-        </div>
-      ) : null }
-
     </div>
   );
 }

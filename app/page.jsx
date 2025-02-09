@@ -11,7 +11,7 @@ const data = [
     title: "Genshin Impact",
     image: "/img/genshin.webp",
     link: "/genshin",
-  },
+  }
 ];
 
 export default function Home() {
@@ -21,7 +21,7 @@ export default function Home() {
       <p className="mt-2 text-sm lg:text-md">Made with ❤️ by gawston skibidi skrttt.</p>
       <div className="w-[350px] md:w-[800px] grid grid-cols-1 md:grid-cols-2 gap-3 mt-10">
         {data.map((data, index) => (
-          <Link href={data.link} className="relative border w-full h-32 rounded-[16px_0_0_0] overflow-hidden bg-black" key={index}>
+          <Link href={data.link} className="relative border hover:border-orange-400 duration-150 w-full h-32 rounded-[16px_0_0_0] overflow-hidden bg-black" key={index}>
             <p className="absolute z-10 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-lg truncate">{data.title}</p>
             <Image src={data.image} alt="" width={300} height={300} className="w-full h-full object-cover grayscale opacity-15"/>
           </Link>
