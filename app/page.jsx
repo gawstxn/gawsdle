@@ -16,9 +16,16 @@ const data = [
 
 export default function Home() {
   return (
-    <div className="container mx-auto flex flex-col items-center justify-center">
+    <div className="w-full flex flex-col items-center justify-center">
+      <div className="w-full flex justify-between items-center p-4">
+        <p>gawsdle</p>
+        <div className="flex items-center gap-2">
+          👉
+          <Link href="https://github.com/gawston/gawsdle" target="_blank" className="underline">Source code</Link>
+        </div>
+      </div>
       <h1 className="text-4xl lg:text-8xl font-extrabold text-center uppercase mt-10">gawsdle</h1>
-      <p className="mt-2 text-sm lg:text-md">Made with ❤️ by gawston skibidi skrttt.</p>
+      <p className="mt-2 text-sm lg:text-md">Made with ❤️ by gawston.</p>
       <div className="w-[350px] md:w-[800px] grid grid-cols-1 md:grid-cols-2 gap-3 mt-10">
         {data.map((data, index) => (
           <Link href={data.link} className="relative border hover:border-yellow-500 duration-150 w-full h-32 overflow-hidden bg-black" key={index}>
