@@ -836,6 +836,15 @@ const initialCharacters = [
         rarity: 4,
         image: 'https://keqingmains.com/wp-content/uploads/2025/01/UI_AvatarIcon_Lanyan.webp'
     },
+        {
+        name: 'Yumemizuki Mizuki',
+        vision: '/img/Anemo.webp',
+        weapon: '/img/Catalyst.webp',
+        gender: 'Female',
+        nation: '/img/Inazuma.webp',
+        rarity: 5,
+        image: 'https://keqingmains.com/wp-content/uploads/2025/02/Mizuki_Icon.webp'
+    },
 ];
 
 export default initialCharacters;
