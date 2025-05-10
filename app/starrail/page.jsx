@@ -5,6 +5,8 @@ import initialCharacters from "../data/starrailData.js";
 import Image from "next/image.js";
 import Link from "next/link.js";
 
+const game_verstion = 3.4
+
 export default function Home() {
   const [search, setSearch] = useState([]);
   const [characters, setCharacters] = useState([]);
@@ -190,7 +192,7 @@ export default function Home() {
         </div>
       </div>
       <h1 className="text-5xl lg:text-8xl font-extrabold text-center uppercase">Stardle</h1>
-      <p>Honkai: Star Rail Update 3.0</p>
+      <p>Honkai: Star Rail Update {game_verstion}</p>
       <div className="relative w-[340px]">
         <input type="text" list="characters" name="search" id="search" className="w-full h-10 mt-10 bg-transparent border border-[#555] focus:border-[#eee] focus:border-2 focus:outline-none rounded-[14px_0_0_0] pl-2" placeholder="Type character name . . . ." onChange={e => searchCharacter(e.target.value)} autoComplete="off"/>
         <div ref={domSearch} className="absolute max-h-[300px] bg-[#eee] text-black w-full border-x-2 border-[#eee] z-10 overflow-y-scroll">

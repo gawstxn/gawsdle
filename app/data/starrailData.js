@@ -547,7 +547,88 @@ const initialCharacters = [
       "img": "/img/aglaea_icon.webp",
       "select": false,
       "gender": "Female"
-    }
+    },
+    {
+      "name": "Mydei",
+      "element": "https://api.yatta.top/hsr/assets/UI/attribute/IconAttributeImaginary.png",
+      "path": "https://raw.githubusercontent.com/FortOfFans/HSR/main/spriteoutput/avatarprofessiontattoo/profession/BgPathsWarrior.png",
+      "rarity": 5,
+      "img": "https://static.wikia.nocookie.net/houkai-star-rail/images/8/89/Character_Mydei_Icon.png/revision/latest?cb=20250214124624",
+      "select": false,
+      "gender": "Male"
+    },
+    {
+      "name": "Tribbie",
+      "element": "https://api.yatta.top/hsr/assets/UI/attribute/IconAttributeQuantum.png",
+      "path": "https://raw.githubusercontent.com/FortOfFans/HSR/main/spriteoutput/avatarprofessiontattoo/profession/BgPathsShaman.png",
+      "rarity": 5,
+      "img": "https://static.wikia.nocookie.net/houkai-star-rail/images/f/f3/Character_Tribbie_Icon.png/revision/latest?cb=20250214124656",
+      "select": false,
+      "gender": "Female"
+    },
+    {
+      "name": "Castorice",
+      "element": "https://api.yatta.top/hsr/assets/UI/attribute/IconAttributeQuantum.png",
+      "path": "https://raw.githubusercontent.com/FortOfFans/HSR/main/spriteoutput/avatarprofessiontattoo/profession/BgPathsMemory.png",
+      "rarity": 5,
+      "img": "https://static.wikia.nocookie.net/houkai-star-rail/images/d/da/Character_Castorice_Icon.png/revision/latest?cb=20250328124417",
+      "select": false,
+      "gender": "Female"
+    },
+    {
+      "name": "Cipher",
+      "element": "https://api.yatta.top/hsr/assets/UI/attribute/IconAttributeQuantum.png",
+      "path": "https://raw.githubusercontent.com/FortOfFans/HSR/main/spriteoutput/avatarprofessiontattoo/profession/BgPathsWarlock.png",
+      "rarity": 5,
+      "img": "https://static.wikia.nocookie.net/houkai-star-rail/images/9/99/Character_Cipher_Icon.png/revision/latest?cb=20250509121146",
+      "select": false,
+      "gender": "Female"
+    },
+    {
+      "name": "Hyacine",
+      "element": "https://api.yatta.top/hsr/assets/UI/attribute/IconAttributeWind.png",
+      "path": "https://raw.githubusercontent.com/FortOfFans/HSR/main/spriteoutput/avatarprofessiontattoo/profession/BgPathsMemory.png",
+      "rarity": 5,
+      "img": "https://static.wikia.nocookie.net/houkai-star-rail/images/c/c0/Character_Hyacine_Icon.png/revision/latest?cb=20250509121044",
+      "select": false,
+      "gender": "Female"
+    },
+    {
+      "name": "Anaxa",
+      "element": "https://api.yatta.top/hsr/assets/UI/attribute/IconAttributeWind.png",
+      "path": "https://raw.githubusercontent.com/FortOfFans/HSR/main/spriteoutput/avatarprofessiontattoo/profession/BgPathsnMage.png",
+      "rarity": 5,
+      "img": "https://static.wikia.nocookie.net/houkai-star-rail/images/f/f0/Character_Anaxa_Icon.png/revision/latest?cb=20250328124329",
+      "select": false,
+      "gender": "Male"
+    },
+    {
+      "name": "Saber",
+      "element": "https://api.yatta.top/hsr/assets/UI/attribute/IconAttributeWind.png",
+      "path": "https://raw.githubusercontent.com/FortOfFans/HSR/main/spriteoutput/avatarprofessiontattoo/profession/BgPathsWarrior.png",
+      "rarity": 5,
+      "img": "https://static.wikia.nocookie.net/houkai-star-rail/images/4/43/Character_Saber_Icon.png/revision/latest?cb=20250503144246",
+      "select": false,
+      "gender": "Female"
+    },
+    {
+      "name": "Archer",
+      "element": "https://api.yatta.top/hsr/assets/UI/attribute/IconAttributeQuantum.png",
+      "path": "https://raw.githubusercontent.com/FortOfFans/HSR/main/spriteoutput/avatarprofessiontattoo/profession/BgPathsRogue.png",
+      "rarity": 5,
+      "img": "https://static.wikia.nocookie.net/houkai-star-rail/images/8/8f/Character_Archer_Icon.png/revision/latest?cb=20250503154843",
+      "select": false,
+      "gender": "Male"
+    },
+    {
+      "name": "Phinon",
+      "element": "https://api.yatta.top/hsr/assets/UI/attribute/IconAttributePhysical.png",
+      "path": "https://raw.githubusercontent.com/FortOfFans/HSR/main/spriteoutput/avatarprofessiontattoo/profession/BgPathsWarrior.png",
+      "rarity": 5,
+      "img": "https://static.wikia.nocookie.net/houkai-star-rail/images/e/ef/Character_Phainon_Icon.png/revision/latest?cb=20250506083713",
+      "select": false,
+      "gender": "Male"
+    },
   ];
 
 export default initialCharacters;

@@ -25,7 +25,7 @@ export default function Home() {
         </div>
       </div>
       <h1 className="text-4xl lg:text-8xl font-extrabold text-center uppercase mt-10">gawsdle</h1>
-      <p className="mt-2 text-sm lg:text-md">Made with ❤️ by gawston.</p>
+      <p className="mt-2 text-sm lg:text-md">Made with ❤️ by <Link href={"https://www.gawstxn.xyz/"} className="underline">gawstxn</Link></p>
       <div className="w-[350px] md:w-[800px] grid grid-cols-1 md:grid-cols-2 gap-3 mt-10">
         {data.map((data, index) => (
           <Link href={data.link} className="relative border hover:border-yellow-500 duration-150 w-full h-32 overflow-hidden bg-black" key={index}>

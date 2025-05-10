@@ -836,7 +836,7 @@ const initialCharacters = [
         rarity: 4,
         image: 'https://keqingmains.com/wp-content/uploads/2025/01/UI_AvatarIcon_Lanyan.webp'
     },
-        {
+    {
         name: 'Yumemizuki Mizuki',
         vision: '/img/Anemo.webp',
         weapon: '/img/Catalyst.webp',
@@ -844,6 +844,42 @@ const initialCharacters = [
         nation: '/img/Inazuma.webp',
         rarity: 5,
         image: 'https://keqingmains.com/wp-content/uploads/2025/02/Mizuki_Icon.webp'
+    },
+    {
+        name: 'Varesa',
+        vision: '/img/Electro.webp',
+        weapon: '/img/Catalyst.webp',
+        gender: 'Female',
+        nation: '/img/Natlan.webp',
+        rarity: 5,
+        image: 'https://keqingmains.com/wp-content/uploads/2025/03/varesa_111_icon.webp'
+    },
+    {
+        name: 'Iansan',
+        vision: '/img/Electro.webp',
+        weapon: '/img/Polearm.webp',
+        gender: 'Female',
+        nation: '/img/Natlan.webp',
+        rarity: 4,
+        image: 'https://keqingmains.com/wp-content/uploads/2025/03/iansan_110_icon.webp'
+    },
+    {
+        name: 'Escoffier',
+        vision: '/img/Cryo.webp',
+        weapon: '/img/Polearm.webp',
+        gender: 'Female',
+        nation: '/img/Fontaine.webp',
+        rarity: 5,
+        image: 'https://keqingmains.com/wp-content/uploads/2025/05/Escoffier_Avatar_Icon.webp'
+    },
+    {
+        name: 'Ifa',
+        vision: '/img/Anemo.webp',
+        weapon: '/img/Catalyst.webp',
+        gender: 'Male',
+        nation: '/img/Natlan.webp',
+        rarity: 4,
+        image: 'https://static.wikia.nocookie.net/gensin-impact/images/5/5f/Ifa_Icon.png/revision/latest?cb=20250507052606'
     },
 ];
 

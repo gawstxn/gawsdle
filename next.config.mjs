@@ -7,7 +7,8 @@ const nextConfig = {
             'api.yatta.top', 
             'genshin.jmp.blue', 
             'keqingmains.com',
-            'prydwen.gg'
+            'prydwen.gg',
+            'static.wikia.nocookie.net'
         ],
     },
 };
